@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('./assets/font/GIL_____.TTF');
+}
+
+@font-face {
+    font-family: 'Gill Sans-Bold';
+    src: url('./assets/font/gill-sans-mt-bold.ttf');
+}
+
+:root {
+    --dark-bg: #000000;
+    --light-bg: #FAF9FF;
+
+    --primary: #0D1335;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav {
+    background-color: var(--dark-bg);
+}
+
+/*----GLOBAL STYLING----*/
+.navButton {
+    background-color: var(--light-bg);
+    padding: 0.5rem 1rem;
+    color: var(--dark-bg);
+}
+
+.logo {
+    max-width: 180px;
+}
+
+.fS-1 {
+    font-size: 4rem;
+}
+
+/*------------*/
+#whitebg {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+#blackbg {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 52.5%;
+    z-index: 2;
+}
+
+#makered {
+    position: absolute;
+    background-color: black;
+    mix-blend-mode: screen;
+    width: 100%;
+    height: 52.5%;
+    z-index: 4;
+}
+
+.hero-text,
+.hero-text-xl {
+    mix-blend-mode: difference;
+    color: white;
+    z-index: 3;
+}
+
+.hero-text {
+    font-size: 13.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-text-xl {
+    font-size: 50rem;
+    font-weight: 0;
+}
+
+.poly {
+    clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+    background-color: #000000;
+    height: 60px;
+    width: 300px;
+}
