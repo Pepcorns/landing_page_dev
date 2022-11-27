@@ -4,24 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <!--Jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
+    <script src="./vendors/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
-
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   </head>
   <body>
-    <section>
+    <div ng-app="app">
       <nav
         class="d-flex flex-row px-5 py-4 align-items-center justify-content-between"
       >
@@ -36,7 +29,9 @@
         <ul class="d-flex flex-row gap-5 justify-align-center">
           <li><a href="" class="menuItem">Startups</a></li>
           <li><a href="" class="menuItem">Raise Funding</a></li>
-          <li><a href="" class="menuItem">Learn</a></li>
+          <li>
+            <a href="#!knowledgebase/investors" class="menuItem">Learn</a>
+          </li>
         </ul>
 
         <ul class="d-flex flex-row gap-5">
@@ -48,102 +43,10 @@
           </li>
         </ul>
       </nav>
-      <div id="whitebg"></div>
-      <div id="blackbg"></div>
-      <div id="makered"></div>
+      <div ng-view></div>
+    </div>
 
-      <div
-        class="d-flex flex-row px-5 justify-content-between align-items-center"
-      >
-        <h1 class="hero-text text-start">
-          Invest in <br />
-          Startups
-        </h1>
-        <h1 class="hero-text-xl">/</h1>
-        <h1 class="hero-text text-end">
-          Find <br />
-          Investors
-        </h1>
-      </div>
-    </section>
-
-    <section class="m-2">
-      <div class="d-flex flex-row">
-        <div class="p-5 border border-dark border-start-0 border-2 w-50">
-          <p class="fS-1">
-            Next Gen Startups <br />
-            Raise Funds from the <br />
-            Community
-          </p>
-        </div>
-
-        <div
-          class="d-flex flex-column gap-4 p-5 justify-content-center border border-dark border-start-0 border-end-0 border-2 w-50"
-        >
-          <p class="fs-1">Invest in the Future you believe in</p>
-          <div class="d-flex flex-row align-items-center">
-            <div
-              class="poly d-inline-flex justify-content-start px-4 align-items-center text-light"
-            >
-              <span class="fs-2">Get Started</span>
-            </div>
-            <div class="d-flex flex-row position-absolute">
-              <span class="arrow1"></span>
-              <span class="arrow2"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-5 border border-dark border-top-0 border-start-0 border-end-0 border-2"
-      >
-        <h1 class="text-center">OUR PARTNERS</h1>
-        <div class="text-center">logos here</div>
-      </div>
-    </section>
-
-    <section>
-      <div class="mt-5 py-5">
-        <p class="fS-1 container text-center text-wrap">
-          Explore,Invest,Diversify and Participate in the
-          <strong>Next Big Thing</strong>
-        </p>
-      </div>
-    </section>
-
-    <section style="background-color: var(--dark-bg)">
-      <div class="d-flex flex-row justify-content-between p-5">
-        <div class="p-5">
-          <h2 class="text-light mb-5">Investors</h2>
-          <ul class="body-list text-light">
-            <li>Now anybody can invest in startup.</li>
-            <li>
-              Diversify you portfolio with startups, starting with just ₹ 1000.
-            </li>
-            <li>Empowering women entrepreneurs with SheEO initiative.</li>
-            <li>Invest alongside institutions and marquee investors.</li>
-            <li>Invest in the future you believe in.</li>
-          </ul>
-          <span><a href="" class="info">More Info</a></span>
-        </div>
-        <div class="p-5">
-          <div class="img-placeholder container-sm"></div>
-        </div>
-        <div class="p-5">
-          <h2 class="text-light mb-5">Founders</h2>
-          <ul class="body-list text-light">
-            <li>Raise funds withiin days, not months, on your condition.</li>
-            <li>Clean and crisp cap table.</li>
-            <li>
-              No matter what round of investment you are raising, we got you
-              covered.
-            </li>
-            <li>Raise funds from community and market your brand</li>
-            <li>Acquire new customers through exposure on Pepcorns</li>
-          </ul>
-          <span><a href="" class="info">More Info</a></span>
-        </div>
-      </div>
-    </section>
+    <script src="./js/app.js"></script>
+    <script src="./js/knowledgeController.js"></script>
   </body>
 </html>

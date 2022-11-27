@@ -24,6 +24,7 @@
 body {
     background-color: var(--background);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -111,6 +112,11 @@ nav {
     border-radius: 10px;
 }
 
+.list-style {
+    list-style: disc;
+    list-style-position: inside;
+}
+
 /*------------*/
 #whitebg {
     position: absolute;
@@ -178,4 +184,12 @@ nav {
 
 .arrow2 {
     left: 225px;
+}
+
+.sideNav {
+    min-width: 300px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
+    height: 100%;
 }
