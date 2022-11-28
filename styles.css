@@ -159,45 +159,64 @@ nav {
     height: 100%;
 }
 
-@media(max-width:1920px) {
+.hero-text {
+    font-weight: 600;
+    line-height: 1;
+}
+
+@media (min-width:1400px) and (max-width:1920px) {
     #blackbg {
-        height: calc(50vw - 48%);
+        height: calc(390px + 0.33333vw);
     }
 
     #makered {
-        height: calc(50vw - 48%);
+        height: calc(390px + 0.33333vw);
     }
 
     .hero-text {
-        font-size: calc(12vw - 50%);
-        font-weight: 600;
-        line-height: 1;
+        font-size: calc(10rem + 00.33333vw);
     }
 
     .hero-text-xl {
-        font-size: calc(43.5vw - 50%);
-    }
-}
-
-
-@media (max-width:1440px) {
-    #blackbg {
-        height: calc(50vw - 41%);
-    }
-
-    #makered {
-        height: calc(50vw - 48%);
+        font-size: calc(40rem + 00.33333vw);
     }
 
 }
 
-@media (max-width:1024px) {
+
+@media (min-width:1025px) and (max-width:1399px) {
     #blackbg {
-        height: calc(50vw - 29%);
+        height: calc(290px + 0.33333vw);
     }
 
     #makered {
-        height: calc(50vw - 29%);
+        height: calc(290px + 0.33333vw);
+    }
+
+    .hero-text {
+        font-size: calc(8rem + 00.33333vw);
+    }
+
+    .hero-text-xl {
+        font-size: calc(30rem + 00.33333vw);
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    #blackbg {
+        height: calc(210px + 0.33333vw);
+    }
+
+    #makered {
+        height: calc(210px + 0.33333vw);
+    }
+
+    .hero-text {
+        font-size: calc(6rem + 00.33333vw);
+    }
+
+    .hero-text-xl {
+        font-size: calc(22rem + 00.33333vw);
     }
 }
 
