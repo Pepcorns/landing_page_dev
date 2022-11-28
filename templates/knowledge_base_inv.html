@@ -1,0 +1,569 @@
+<div>
+  <section>
+    <div class="d-flex flex-row p-5 gap-5">
+      <div class="sideNav">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+                ng-click="setSubMenuIndex(1)"
+              >
+                For Investors
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li ng-click="setSubMenuIndex(2)">How It Works</li>
+                  <li ng-click="setSubMenuIndex(3)">SAFE notes</li>
+                  <li ng-click="setSubMenuIndex(4)">Earning a return</li>
+                  <li ng-click="setSubMenuIndex(5)">Pepcorns Fee</li>
+                  <li ng-click="setSubMenuIndex(6)">Risks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <a href="#!/knowledgebase/company">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  For Companies
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>For Companies</li>
+                  <li>How it works?</li>
+                  <li>Who can fundraise?</li>
+                  <li>How do we charge?/li></li>
+                  <li>Campaign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(1)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>For Investors 💵</h1>
+
+          <p class="text-muted fs-4">
+            Everything you need to know about investing on Pepcorns.
+          </p>
+
+          <p>
+            <strong
+              >Pepcorns: Enabling people to invest in future, invest in startups
+              they believe in.</strong
+            >
+          </p>
+
+          <hr />
+          <h2>Overview</h2>
+          <ul class="mt-4 mb-4 d-flex flex-column gap-4 list-style">
+            <li class="list-style">
+              Explore highly vetted startups raising funds on Pepcorns.
+            </li>
+            <li class="list-style">
+              Read about their business models, market strategies, and how they
+              are impacting the world.
+            </li>
+            <li class="list-style">
+              Explore seamless opportunities with them, guide them on their
+              journey and help them grow. As these companies grow and succeed,
+              their investors will share in that economic success.
+            </li>
+            <li class="list-style">
+              You decide which company deserves funding. Business success earns
+              you rewards and money. You lose all your money if it doesn't do
+              well. Either way, you join a community of other investors 'the
+              crazy ones' who are eager to help a startup succeed.​
+            </li>
+          </ul>
+          <hr />
+
+          <h2><strong>Why should you invest in Startups?</strong></h2>
+          <p>
+            ​Many of those who fund startups do so for several reasons: few feel
+            moral obligation, few do it because they genuinely believe in the
+            concept, few take pride in what they do, few do it to diversify
+            their portfolio and most to gain personal wealth. Yeah... if you
+            invest wisely, you can make profit on your investment if the company
+            grows and becomes more successful. <br />
+            We recommend, invest only in what you love and understand (/you've
+            expertise in). If you don’t understand it, it may be a bad idea to
+            invest. <br />
+            Investing should not be solely about earning a return. To invest in
+            something as risky as a startup, you need more than conviction. It’s
+            pretty cool to learn about future industries when founders post
+            updates.​​
+          </p>
+
+          <h2>
+            <strong>What sorts of companies you would be investing in?</strong>
+          </h2>
+          <p>
+            We look for 'Spark' + 'Awww' factor. It's our promise, every company
+            you would see here on Pepcorns would be of next generation (driving
+            innovation). You can expect anything and everything from medicines
+            to pizza, from dog wellness products to cat shampoo, from space
+            ships to red planet hotel chains, from robots to the next big
+            crypto, everything is on the horizon.
+          </p>
+
+          <h2>
+            <strong>How much can I invest?</strong>
+          </h2>
+          <p>
+            ​Now anybody can invest in their favourite startup, starting with as
+            little as ₹1000. This token size varies depending on your risk
+            appetite, sky is the limit.
+          </p>
+
+          <h2><strong>What happen to the funds after you invest</strong></h2>
+          <p>
+            Once you make an investment, funds will be held in an escrow
+            account. The funds will be released from this account to the company
+            after the campaign ends.
+          </p>
+
+          <h2><strong>How perks, rewards, and equity works?</strong></h2>
+          <p>
+            ​Everything you invest in is aligned with rewards and benefits.
+            Rewards include premium membership, early access deals and more. If
+            you are HNIs​(Accredited), you may directly invest in equity.
+            Investors, those who could not invest directly in equity, we invest
+            a little chunk for them, which is distributed among all investors
+            when we exit.
+            <i> <strong> Yeah... reward bhi profit bhi!</strong> </i>
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(2)" class="d-flex flex-row gap-5">
+        <div class="p-5 border border-grey border-1 rounded-2 container-md">
+          <h1>How it works? 🤷‍♀️</h1>
+          <br />
+          <p class="text-muted fs-4">
+            Process involved in investing in companies on Pepcorns
+          </p>
+          <br />
+          <p>
+            While building Pepcorns, our focus was on democratizing the startup
+            funding with fast transaction deal flows. Traditional funding deals
+            take months to finalize and execute. And so, we have made the
+            process 'simple and minimal' with all necessary compliances.
+            <br />
+            <br />
+            Giving everyone access to startup investing, and levelling the
+            playing field for startup fundraising.
+          </p>
+          <hr />
+          <ul class="mt-4 mb-4 d-flex flex-column gap-4">
+            <li class="list-style">
+              <strong>Create an account: </strong> Sign up, and get your free
+              account. Complete the required details to get started, and you're
+              ready to drive the change!
+            </li>
+            <li class="list-style">
+              <strong>Explore Startups: </strong>
+              Browse from a curated list of startups, which are of your
+              interest.
+            </li>
+            <li class="list-style">
+              <strong>Do your own research: </strong>We recommend investors
+              examine startups, check their market presence, look out for moat,
+              and vertical they are dealing in. Make sure you understand the
+              risks associated with the investment.
+            </li>
+            <li class="list-style">
+              <strong>Invest: </strong>
+              As you finalize the startup, choose your amount to invest and
+              complete your commitment.
+            </li>
+            <li class="list-style">
+              <strong>Wait for Perks: </strong>
+              As startups achieve milestones, they disburse rewards. In the case
+              of equity, they sign the term sheet and formalities. In either
+              case, to earn well you need to wait and cheer them. In case, the
+              company does not reach their minimum funding goal, all funds will
+              be returned to the investors within 5 business days.
+            </li>
+          </ul>
+          <hr />
+          <h3 id="1"><strong> Cancelling an investment</strong></h3>
+          <p>
+            You may cancel an investment under 10 days, from the date of
+            investment you made. Remember, reducing your investment is
+            considered as cancellation. For any such cancellation, you may click
+            the given cancel button or write us at Investment@pepcorns.com
+          </p>
+          <h3 id="2">
+            <strong> Can the startup reject my investment?</strong>
+          </h3>
+          <p>
+            Yes, every company reserves the right to reject, in whole or in
+            part, any investment commitment at any time before the proceeds are
+            drawn from the escrow account. Any rejected investments will be
+            returned to the investor in full.
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(3)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>SAFE Notes 📝</h1>
+          <p class="text-muted fs-4">
+            What the heck are SAFE(Simply Agreement for Future Equity)
+          </p>
+          <h2><strong>What are SAFE notes?</strong></h2>
+          <p>
+            A SAFE is a popular method to invest in early-stage companies. At
+            its core, it’s an agreement – an investor puts money into a startup
+            today and both parties agree that, in the future, that money can
+            convert into stock. ​Y Combinator created SAFE back in 2013, and
+            first time adopted in India by Mumbai based VC firm 100X.VC in 2019.
+            <br />
+            ​Early-stage startups use SAFEs to delay the arduous task of
+            determining company valuation. This is also a less complicated and
+            much cheaper option than expensive equity rounds, which might take
+            months of deal negotiation - execution, and serious money. <br />
+            The number of shares you receive is determined at the next priced
+            financing when professional investors – typically venture
+            capitalists – set the price for preferred stock. Then, calculated by
+            using the Valuation Cap and sometimes the Discount Rate, your SAFE
+            often converts into shares at a lower price than the venture
+            capitalists paid, since you invested earlier.​ <br />
+            ​Unlike traditional Convertible Note, SAFEs are not a loan. As such,
+            it does not accrue interest, have a maturity date, or have a legal
+            obligation to be paid back. This makes it a simpler and cheaper way
+            to fund a startup, and it aligns better with the interests of most
+            early-stage equity investors who never wanted to be lenders (after
+            all, convertible notes are rarely, if ever, repaid in cash - the
+            startup goes bankrupt).
+          </p>
+          <h2><strong> How SAFE not works on Pepcorns</strong></h2>
+          <p>
+            ​Investors using the SAFE get a financial stake in the company.
+            Investments are converted to equity when the company raises its next
+            round. If the company doesn't raise the next round, the investment
+            would be converted into shares after two years(2 yrs). Read more
+            about <strong> SAFE </strong> and <strong> SAFE Primer</strong>.
+          </p>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <span
+                class="nav-link"
+                ng-class="{'active':selectedMenu == '1'}"
+                ng-click="setTabIndex(1)"
+              >
+                SAFE</span
+              >
+            </li>
+            <li class="nav-item" ng-click="setTabIndex(2)">
+              <span class="nav-link" ng-class="{'active':selectedMenu == '2'}">
+                SWAP</span
+              >
+            </li>
+          </ul>
+          <div ng-if="isSetTabIndex(1)">
+            <div class="d-flex flex-column gap-2">
+              <a
+                href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2F3xwRNJZJmIZdXzjtUnAR%2FA%20Primer%20on%20SAFE%20Notes.pdf?alt=media&token=e8f4e92c-15ad-48c2-9d75-87f22b9345b5"
+                download="newfilename"
+                class="text-muted"
+                >A Primer on SAFE Notes.pdf</a
+              >
+
+              <a
+                href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2FUydl21KCK96ZefkzwNuf%2FPepcorns%20iSafe%20Draft.pdf?alt=media&token=28884bf3-8e6d-4114-a020-e32559cf793e"
+                download="newfilename"
+                class="text-muted"
+                >Pepcorns iSafe Draft.pdf
+              </a>
+            </div>
+          </div>
+          <div ng-if="isSetTabIndex(2)">
+            <div class="d-flex flex-column gap-2">
+              <a
+                href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2F41Ab5OYEoQpanMswBxx6%2FA%20Primer%20on%20SWAP.pdf?alt=media&token=b69191c6-afc1-46ef-b435-ac52408cdbe8"
+                download="newfilename"
+                class="text-muted"
+                >A Primer on SWAP.pdf</a
+              >
+
+              <a
+                href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2FYv6DAEPrxn4sHup2buiv%2FPepcorns%20SWAP.pdf?alt=media&token=3339009f-c4b9-4f1a-8caf-d170e5474c2e"
+                download="newfilename"
+                class="text-muted"
+                >Pepcorns SWAP.pdf
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(4)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Earning a return 📈</h1>
+          <p class="text-muted fs-4">How you realize profit?</p>
+          <p>
+            <strong>
+              Your returns depend on the investment you make and the rewards you
+              select.
+            </strong>
+          </p>
+          <p>
+            Super early-stage startups use SAFE notes(Simple Agreement for
+            Future Equity). These will convert your investment to stock at a
+            later date if the company raises a "priced round" from major
+            investors, most often venture capitalists. At this point, you are a
+            shareholder owning equity, and you earn a return if the value of
+            that stock goes up over time, and you are able to sell it.
+          </p>
+          <p>
+            ​​​​​​​​​If your reward is not equity, you get your rewards, as your
+            commitment freezes. And in a later stage, you'll receive returns as
+            the company offers EXIT.​​
+          </p>
+          <p class="alert alert-danger">
+            <strong>Risk note:</strong> Your investment may never return if no
+            exit occurs. Unless a triggering event occurs, the SAFE investments
+            will not convert and the investor may lose the money.
+          </p>
+          <h2><strong>How long until I see a return?</strong></h2>
+          <p>
+            An investment brings you return if a certain trigger event occurs,
+            such as an acquisition, an IPO, or buyback. Trigger events sometimes
+            occur sooner, but most don't occur for 4-6 years, and some ​may
+            ​take even longer.​ Startups are​​ illiquid, and so finding new
+            buyers is challenging. <br />
+            It took Ashish Gupta 9 years in Flipkart, ​and ​Infoedge 10 years in
+            Zomato for crazy EXIT.​​​​
+          </p>
+          <h2><strong>​How is the return determined?</strong></h2>
+          <p>
+            Straight answer is Vaulation. The post money valuation of your
+            invested amount in startup, determines your return. <br />
+            A company's valuation aims to estimate its worth in the broader
+            sense, and the value of a company can be determined by looking at
+            many factors, such as the number of founders, business moat,
+            potential growth trends, assets owned, cash flow, customer
+            acquisition rate, and many more.
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(5)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Pepcorns Fee 🍺</h1>
+          <p class="text-muted fs-4">
+            What fees does Pepcorns charge to Investors
+          </p>
+          <p>
+            ​​Investing on Pepcorns is completely free, as Pepcorns charges fees
+            to the companies seeking investment; or in case if it has to it may
+            charge minimal for unavoidable charges. <br />
+            <br />
+            That being said, Pepcorns may charge its investors a commission of
+            up to 3% for escrow agent, payment gateway, and compliance if not
+            covered by the company. This fee will be charged to investors on top
+            of the investment. Your total amount charged will be stated clearly
+            on the investment form with processing fees (say, 2.5% processing
+            fee).
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(6)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Risks ⚡</h1>
+          <p class="text-muted fs-4">Risks involved in investing on Pepcorns</p>
+          <p class="alert alert-primary">
+            <strong>Like seriously, 'Risk hai toh Ishq hai'</strong>
+          </p>
+          <p>
+            It is important to invest in accordance with your risk appetite,
+            which should not negatively impact your daily life. Invest in what
+            you have more than conviction. Every idea doesn't turn Google,
+            Tesla, Zomato, or Byzus but indeed which win-wins big. Always
+            diversify, don't put all your money in one company instead put small
+            chunks in multiple.
+          </p>
+          <hr />
+          <h2>
+            <strong>Below are excerpts from our full Risk disclosure:</strong>
+          </h2>
+          <ul class="mt-4 mb-4 d-flex flex-column gap-4">
+            <li class="list-style">
+              <strong>Illiquidity:</strong> There is a possibility that you will
+              need to hold your investment indefinitely. Unlike investing in
+              public listed companies on the stock exchange, buying-selling
+              shares could be hard. Finding buyers in the private market could
+              be challenging.
+            </li>
+            <li class="list-style">
+              <strong>Ownership Dilution:</strong> Successful startups host many
+              rounds of financings, all the way to an IPO. For each financing,
+              the startup issues additional stock to the new investors. As long
+              as the value of the company increases with each funding round,
+              this is healthy and normal.
+            </li>
+            <li class="list-style">
+              <strong>Speculative:</strong> Unlike an investment in a mature
+              business, where there is a track record of revenue and income, the
+              success of a startup, early-stage companies often rely on the
+              development of a new product or services that may or may not find
+              a market.
+            </li>
+            <li class="list-style">
+              <strong>Fraud:</strong> Every registered company which raise on
+              Pepcorns goes under strict scrutiny and checks, but there is no
+              way to control others action.
+            </li>
+            <li class="list-style">
+              <strong>Limited disclosure:</strong> The company shares business
+              plan, offerings, updates, finance, and use of proceeds, among
+              other information. It’s important to note that an early-stage
+              company may be able to provide only limited information about its
+              business plan and operations because of less resources.
+            </li>
+          </ul>
+          <hr />
+          <p>
+            Make sure you review <strong> detailed Risks</strong> before you
+            start Investing.
+          </p>
+          <h2><strong>​How can I decrease the risk?</strong></h2>
+          <p>
+            You are more likely to avoid losses by diversifying your
+            investments, focusing on areas in which you have the expertise, and
+            investing in startups whose products you strongly believe in. Even
+            professional investors have a difficult time predicting exactly how
+            startups will earn money in the future (e.g., Google in 1999).
+            Investing in what you know and find personally valuable is an
+            important signal of a good investment.
+          </p>
+          <h2><strong>How many investments should I make?</strong></h2>
+          <p>
+            You can invest as many you want unless this negatively impacts your
+            life. We recommend making several small investments each year rather
+            than one large one.
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

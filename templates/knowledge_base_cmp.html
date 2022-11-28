@@ -1,0 +1,729 @@
+<div>
+  <section>
+    <div class="d-flex flex-row p-5 gap-5">
+      <div class="sideNav">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <a href="#!/knowledgebase/investors">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                  ng-click="setSubMenuIndex(1)"
+                >
+                  For Investors
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>How It Works</li>
+                  <li>SAFE notes</li>
+                  <li>Earning a return</li>
+                  <li>Pepcorns Fee</li>
+                  <li>Risks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                For Companies
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li ng-click="setSubMenuIndex(1)">For Companies</li>
+                  <li ng-click="setSubMenuIndex(2)">Why Pepcorns?</li>
+                  <li ng-click="setSubMenuIndex(3)">How it works?</li>
+                  <li ng-click="setSubMenuIndex(4)">Who can fundraise?</li>
+                  <li ng-click="setSubMenuIndex(5)">How do we charge?</li>
+                  <li ng-click="setSubMenuIndex(6)">Campaign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(1)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>For Companies 📫</h1>
+          <p class="text-muted fs-4">
+            Everything you need to know about raising capital on Pepcorns
+          </p>
+          <p>
+            <strong> Pepcorns:</strong> Where fundraising starts with the people
+            who <i>'believe in you' 'your ideas' & 'common goals'</i>.
+          </p>
+          <hr />
+          <h2><strong>Overview</strong></h2>
+          <p>
+            Pepcorns is a fundraising platform, through which startups can raise
+            capital from their friends-family/customer/investor technically
+            anybody. Until now, only the wealthiest < 1% fund startups. Everyone
+            else was relegated to buying a product or donating money to support
+            startups, but this now changes with 'Pepcorns fair play'. Now,
+            startups can access a far larger group of potential investors while
+            rewarding them. These rewards even allow ownership in some cases and
+            be part of the founders' exciting journey. <br />
+            We make funding your startup easier by guiding you through the
+            process, handling most of the tedious paperwork, and coaching you to
+            become a better fundraiser. <br />
+            Our mission is to make this new financing avenue as simple and
+            transparent as possible for companies and investors alike.
+          </p>
+          <h2><strong>Work with people you know</strong></h2>
+          <p>
+            You’re already pitching customers, vendors, and employees to your
+            business every day. Now, you can get their buy-in in a deeper way.
+            Bring together your customers, vendors, employees, friends, family,
+            local community, followers, and fans, to close a round of funding.
+            Let your customers and fans buy into your mission and turn them into
+            real brand ambassadors.
+          </p>
+          <h2><strong> Build a community</strong></h2>
+          <p>
+            You’re bringing people together who have common interests. As people
+            invest, we help you solicit their feedback: Why did they invest?
+            What are their concerns? How might they be a resource for your
+            business? Perhaps they’re the expert that you need to get the next
+            client or solve a patent problem you’ve been worrying about. Through
+            structured discussion on our platform, you can interact efficiently
+            with your investors, and you’ll always have a group of people to
+            return to for help or, possibly, follow-on funding consideration.
+            Learn more, how community can help your startup and why it is so
+            important.
+          </p>
+          <a
+            href="https://medium.com/@pepcorns/why-you-need-a-community-for-your-startup-b0ed27602eac"
+            class="text-muted"
+            >Learn more, how community can help your startup and why it is so
+            important</a
+          >
+          <h2><strong>Get everything in one place</strong></h2>
+          <p>
+            As part of preparing an offering, we’ll help you gather your
+            financials, business plan, risks, team information, video, investor
+            pitch materials, and other key information about your business. When
+            all of this is in one organized place, this would earn traction and
+            make money raising easier.
+          </p>
+          <h2><strong>Standardized legal paperwork speed up things</strong></h2>
+          <p>
+            If you go the traditional way, it would cost more than ₹1,00,000 for
+            the attorney. Our standardized templates will keep costs down while
+            also fitting the particulars of your startup. These documents also
+            make things easier for investors: as this remains common for each
+            startup(/company) interested in offering.
+          </p>
+          <h2><strong>Free consulting help and inspection</strong></h2>
+          <p>
+            As part of the process, our compliance team will review various
+            aspects of your offering—and, in turn, your business—providing
+            important feedback. Once your offering is live, feedback from
+            potential investors doing their own due diligence provides valuable
+            insight into your business.
+          </p>
+          <h2><strong>A beautiful, custom pitch page</strong></h2>
+          <p>
+            Our experts work with you and your team to draft a custom pitch page
+            that fits your company. It collects all the information we have
+            about your company in one place for potential investors to
+            review—and make decisions.
+          </p>
+          <h2>
+            <strong>Simple online collection of funds and closings</strong>
+          </h2>
+          <p>
+            Our speedy checkout process handles all sorts of complicated
+            scenarios with grace. If an investor doesn’t have an account with
+            Pepcorns, they can quickly create one. If the investor is already
+            registered, their checkout process will focus on the few additional
+            pieces of information that are needed. Fast checkouts often mean
+            more people complete the process once they start.
+          </p>
+          <h2><strong>Services included at Pepcorns</strong></h2>
+          <p>Pepcorns fees cover:</p>
+          <ul>
+            <li class="list-style">
+              Escrow fees (to keep the deal fair for all)
+            </li>
+            <li class="list-style">Transaction fees</li>
+            <li class="list-style">
+              Draft paperwork for filing with MCA and related authorities.
+            </li>
+            <li class="list-style">
+              Our partner attorney's fees, involved in filing compliance.
+            </li>
+            <li class="list-style">A marketing plan for your offering.</li>
+            <li class="list-style">A custom offering page on our platform.</li>
+            <li class="list-style">
+              Coaching on various aspects of compliance while conducting your
+              offering.
+            </li>
+            <li class="list-style">
+              Background checks of key people in your company.
+            </li>
+            <li class="list-style">
+              Direct access to our team for ongoing support.
+            </li>
+          </ul>
+          <p>
+            Almost everything your company needs to conduct an offering is
+            included. If you're an unregistered entity things may vary.
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(2)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Why Pepcorns? 🤷‍♀️</h1>
+          <p class="text-muted fs-4">
+            Why should a company consider using Pepcorns to raise capital?
+          </p>
+          <p>
+            Pepcorns, opening doors for early-stage startups to gain access to
+            capital through their own communities and users. Rewarding
+            opportunities drive mutual interests of the company and its
+            supporters. Make your most loyal supporters into investors. They are
+            often your most passionate evangelists. <br />
+            <br />
+            Investors have a financial interest in helping your business
+            succeed. For instance, if you own 'Sharma Ji ki Dukan' and your
+            customer is also your investor, she'll likely shop from your shop
+            every time, and she'll impel her friends and others to visit your
+            Dukan.
+          </p>
+          <hr />
+          <h2><strong>Access to founder and partner networks</strong></h2>
+          <p>
+            Need help recruiting an engineer? Looking for an intro to a key VP
+            at a big company? Want feedback on your product from an industry
+            expert? The community may help increase your "luck surface area".
+          </p>
+          <h2><strong>Built by founders, for founders</strong></h2>
+          <p>
+            We understand that founders are busy running their startup, so we do
+            all the grunt work for you. More than that, as founders ourselves,
+            we know exactly what you are going through and so we try keep things
+            simple.
+          </p>
+          <h2><strong>We allow you to collect funds as you raise.</strong></h2>
+          <p>
+            We allow rolling closes on the platform, which enables you to
+            withdraw funds that you’ve raised during your campaign to use
+            immediately for any business expenses or for reinvesting into the
+            marketing component of your raise.
+          </p>
+          <h2><strong>Dedicated legal & on-boarding lead</strong></h2>
+          <p>
+            Our team will guide you through the on-boarding and help along the
+            way. We provide an account manager to help with legal/financial
+            technicalities including filing compliances and a campaign
+            strategist and creative lead who will be dedicated to the marketing
+            components of your raise (full campaign page build, perks,
+            strategy).
+          </p>
+          <h2><strong>Public exposure — Build in public </strong></h2>
+          <p>
+            Put your startup in front of everyday people (potential future
+            customers-investors-influencers). When people talk about your brand,
+            that's when you gain momentum in the market.
+          </p>
+          <h2><strong>Transparent fee structure</strong></h2>
+          <ul class="mt-4 mb-4 d-flex flex-column gap-4 list-style">
+            <li class="list-style">
+              ₹5,000 (Upfront & non-refundable) + 8% success fee on total
+              capital raised through our platform.
+            </li>
+            <li class="list-style">2% rebate for female founders.</li>
+          </ul>
+          <h2><strong>Social cause</strong></h2>
+          <p>
+            For us, 'Ethics' &'Values' are not just words and so we are
+            committed to bringing change in society. Read our whitepaper and
+            join us in driving the change.
+          </p>
+          <p class="alert alert-primary">
+            For unregistered startups, there is no compliance by the governing
+            body but to reduce risk we have our own SOP which we follow for fair
+            play.
+          </p>
+        </div>
+
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(3)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>How it works? 🧙‍♂️</h1>
+          <p class="text-muted fs-4">
+            Process involved in raising funds on Pepcorns
+          </p>
+          <p>
+            At Pepcorns our focus is to make startup funding fast, easy and
+            affordable for all. With that thought, we have streamlined the
+            process cutting major hectic so that founders can start the campaign
+            in less than 20 minutes. We are continuously working to simplify the
+            process further.
+          </p>
+          <hr />
+          <h2><strong>Steps to raise funds</strong></h2>
+          <ul class="mb-4 d-flex flex-column gap-4 list-style">
+            <li class="list-style">
+              <strong>Apply:</strong> Click on 'raise fund', fill the form and
+              submit your application.
+            </li>
+            <li class="list-style">
+              <strong>Diligence & selection:</strong> While we verify, we will
+              be in touch with you to understand your business better. Help us
+              with required information timely, so we can fast process. Complete
+              paperwork and filing process.
+            </li>
+            <li class="list-style">
+              <strong>Craft your campaign:</strong> Setup your account and
+              campaign page — Create a company profile that provides an apt,
+              concise overview of your company, product or service, and funding
+              goals. Tell your story in your own words. Build and design your
+              campaign page to attract investors.
+            </li>
+            <li class="list-style">
+              <strong>Raise funds:</strong> While your campaign is up and
+              running we recommend you approach customers, friends, family, and
+              colleagues to invest in your business. It's crucial to build
+              initial traction, otherwise why would any stranger invest in you
+              if the people who know you best won't?
+            </li>
+            <li class="list-style">
+              <strong>Payout rewards:</strong> After your campaign reach target,
+              your funds remain safe with us in an escrow account, we wait for
+              you to deliver rewards to your investors. This helps us be fair to
+              both!
+            </li>
+            <li class="list-style">
+              <strong>Receive funds:</strong> You receive the funded amount in
+              your registered bank. Your company gets shifted to alumni.
+            </li>
+          </ul>
+          <p class="alert alert-primary">
+            <strong
+              >Keep posting updates on your campaign page, this earns trust and
+              encourages people to invest. Also, this helps the next round VC to
+              approach you.</strong
+            >
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(4)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Who can fundraise? 🌿</h1>
+          <p class="text-muted fs-4">Who can raise capital on Pepcorns?</p>
+          <p>
+            Depending on the nature of business any startup seeking early fund
+            (pre-seed/ seed/ angel), can submit an application. We scrutiny
+            these applications closely, to avoid risk to investors. Our due
+            diligence helps us find quality business and a good fit for the
+            investors.
+          </p>
+          <hr />
+          <p>
+            <strong
+              >Below are a few factors that we consider for eligibility:</strong
+            >
+          </p>
+          <ul class="d-flex flex-column gap-2 list-style">
+            <li class="list-style">Industry</li>
+            <li class="list-style">Product, service, or business</li>
+            <li class="list-style">Future scope & mission</li>
+            <li class="list-style">Fund allocation for future use</li>
+            <li class="list-style">Market traction & growth</li>
+            <li class="list-style">Customer engagement</li>
+            <li class="list-style">Marketing budget</li>
+            <li class="list-style">Team</li>
+            <li class="list-style">Founder experience</li>
+            <li class="list-style">Previous funding</li>
+          </ul>
+          <p>
+            Diligence takes around 4-5 days, and we keep you notified over mail
+            for transparency. If the company fails our due diligence we
+            encourage them to apply again.
+          </p>
+          <p class="alert alert-danger">
+            Pepcorns can debar any company at any point of time, if found
+            malafide behaviour.
+          </p>
+          <h2><strong>Prohibited Companies</strong></h2>
+          <p>
+            Pepcorns appreciate all 'nature of business' but to mitigate risk to
+            investors, we avoid certain domains. Companies from domain as below
+            mentioned, are prohibited on Pepcorns.
+          </p>
+          <ul class="d-flex flex-column gap-2 list-style">
+            <li class="list-style">Pornography</li>
+            <li class="list-style">Gambling</li>
+            <li class="list-style">Banking</li>
+            <li class="list-style">Investing companies</li>
+            <li class="list-style">
+              Discriminatory (encourage discrimination against people)
+            </li>
+            <li class="list-style">
+              Illegal Business (Business subjected as illegal by Indian govt.)
+            </li>
+          </ul>
+          <hr />
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <span
+                class="nav-link"
+                ng-class="{'active':selectedMenu == '1'}"
+                ng-click="setTabIndex(1)"
+                >Unregistred Company</span
+              >
+            </li>
+            <li class="nav-item" ng-click="setTabIndex(2)">
+              <span class="nav-link" ng-class="{'active':selectedMenu == '2'}">
+                Registered Company</span
+              >
+            </li>
+          </ul>
+          <div ng-if="isSetTabIndex(1)">
+            <div>
+              <h2><strong>Unregistered startup</strong></h2>
+              <p class="text-muted fs-4">
+                How unregistered startups raise on Pepcorns?
+              </p>
+              <p>
+                <strong>
+                  Pepcorns allows unregistered startups to raise funds.</strong
+                >
+                As in India startup culture is still in an early stage with very
+                less exposure, and so in an attempt to address this, we help
+                outstanding ideas and startups in incubation.
+              </p>
+              <p>
+                On Pepcorns, unregistered startups fundraise works in two ways:
+              </p>
+              <ul class="mt-4 mb-4 d-flex flex-column gap-4 list-style">
+                <li class="list-style">
+                  Purely raise through rewards (no SAFE option).
+                </li>
+                <li class="list-style">
+                  If your idea sounds brilliant, we help you get registered with
+                  MCA and going further shaping the idea into reality, and
+                  pushing to the larger world. For all this, we have our
+                  associated partners which help through all this.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div ng-if="isSetTabIndex(2)">
+            <div>
+              <h2><strong>Registered startup</strong></h2>
+              <p class="text-muted fs-4">
+                How registered startups raise on Pepcorns?
+              </p>
+              <p>
+                Registered companies have the option to raise through SAFE with
+                other rewards. Using SAFE companies can raise up to 10 crores
+                from accredited investors, depending on your traction. To keep
+                your cap table clean, we limit accredited investors' count too.
+              </p>
+              <p>
+                Registered companies need to qualify below criteria, to run a
+                campaign:
+              </p>
+              <ul class="mt-4 mb-4 d-flex flex-column gap-4 list-style">
+                <li class="list-style">
+                  A company must be registered under the 'Companies Act' in
+                  India.
+                </li>
+                <li class="list-style">
+                  A company not exceeding more than 3 years, from the date of
+                  registration.
+                </li>
+                <li class="list-style">Turnover not more than 25 crore INR.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(5)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>How do we charge? 💸</h1>
+          <p class="text-muted fs-4">
+            What fees does Pepcorns charge for raising funds on the platform?
+          </p>
+          <p>There is no fee for creating a company profile on Pepcorns.</p>
+          <div>
+            <p>
+              Pepcorns charges only when your campaign goes live. These charges
+              are divided into 2 parts:
+            </p>
+            <ul class="d-flex flex-column gap-2 list-style">
+              <li class="list-style">
+                ₹5,000 upfront, this includes our diligence and other costs.
+              </li>
+              <li class="list-style">
+                8% of the total fundraise, only if successfully raised.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(6)" class="d-flex flex-row gap-5">
+        <div
+          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+        >
+          <h1>Campaign 🔊</h1>
+          <p class="text-muted fs-4">All about campaign</p>
+          <h2><strong>How do I create my campaign?</strong></h2>
+          <p>
+            Visit the Raise Money page, put in your company name, then hit that
+            green button.
+          </p>
+          <h2><strong>What information do I need to list?</strong></h2>
+          <ul class="d-flex flex-column gap-4 list-style">
+            <li class="list-syle">Business Plan</li>
+            <li class="list-syle">Pitch Deck</li>
+            <li class="list-syle">Fundraising history</li>
+            <li class="list-syle">Minimum and final goal to raise funds</li>
+            <li class="list-syle">Use of proceeds</li>
+          </ul>
+          <h2>
+            <strong>For registered company additional details, like</strong>
+          </h2>
+          <ul class="d-flex flex-column gap-4 list-style">
+            <li class="list-syle">Director's/founder's equity statement</li>
+            <li class="list-syle">Profits & loss statements</li>
+            <li class="list-syle">Balance sheet</li>
+            <li class="list-syle">Cash flow statement</li>
+            <li class="list-syle">
+              Company certificate(Company CIN/FCRN/LLPIN/FLLPIN)
+            </li>
+          </ul>
+          <p>
+            <strong>Note : </strong>
+            <i
+              >If you decide to run a campaign on Pepcorns, you are legally
+              liable that every statement on your campaign page is 100% true,
+              and that you have not omitted any important information investors
+              should know about.</i
+            >
+          </p>
+          <p class="alert alert-primary">
+            Check this guide, to set up a good campaign.
+          </p>
+          <h2><strong>How much money can I raise?</strong></h2>
+          <p>
+            You can raise any amount up to 10 cr on Pepcorns in a particular
+            financial year. Your campaign has two set goals (minimum and final).
+            You can only withdraw money when you at least reach your minimum
+            goal. This minimum goal needs to be achieved within 2 months to
+            qualify further for the final. We suggest raising achievable targets
+            as you can change the final amount again in the future. The success
+            of your raise will hugely depend on the quality of your campaign and
+            traction.
+          </p>
+          <h2><strong>How can I promote my campaign?</strong></h2>
+          <p>
+            The easiest way to get lots of potential investors to your campaign
+            page is to send traffic from the company's website to the campaign
+            page. <br />
+            You can do this in 2 ways and direct your user and visitor from your
+            website to the campaign page:
+          </p>
+          <ul class="d-flex flex-column gap-4 list-style">
+            <li class="list-style">
+              POP-UP: Visiter may click the button to visit the campaign if
+              interested.
+            </li>
+            <li class="list-style">
+              URL Redirect: You change the website DNS to point to your campaign
+              page URL.
+            </li>
+          </ul>
+          <p><strong>Social Media</strong></p>
+          <p>
+            If in case you decide to run ads on social media, avoid hyperbole
+            and misleading info. You can not write 'raising funds or anything
+            like that' instead you can simply tell about the product and ask
+            people to support you in building the future or reframe. Do not
+            mention any future forecast related to company growth, tho' you can
+            mention company expansion plans and future products. Always prefer
+            the storytelling approach instead of directly asking for support.
+            Try approaching influencers.
+          </p>
+          <p><strong> Make strategy</strong></p>
+          <p>
+            The key to a successful rising is managing momentum. The faster the
+            investments come in, the more new investors would want to invest.
+            The most important thing you can do is to plan a big first day. That
+            "pop" can spark the entire fundraise. Prepare a list of all leads
+            who love what you are doing. Write an authentic personal email or
+            message to them.
+          </p>
+          <h2><strong>Who can fund my campaign?</strong></h2>
+          <p>
+            Any person who believes in your startup can back your campaign.
+            <br />
+            It's just accredited investors have more financial power and you can
+            raise crazy with them.
+          </p>
+          <h2><strong>For successful campaign</strong></h2>
+          <p class="text-muted fs-4">
+            What is important for a successful campaign?
+          </p>
+          <p>
+            Companies that meet any of these factors probably raise good money:
+          </p>
+          <ul class="d-flex flex-column gap-4 list-style">
+            <li class="list-style">
+              Do you have a strong community of friends, fans, customers or
+              supporters?
+            </li>
+            <li class="list-style">How lucrative your rewards are?</li>
+            <li class="list-style">
+              Are you doing something really cool that no one has ever done
+              before?
+            </li>
+            <li class="list-style">
+              Does your product directly improve people's lives?
+            </li>
+            <li class="list-style">Are you a brilliant storyteller?</li>
+            <li class="list-style">Do you have some traction?</li>
+          </ul>
+          <h2><strong>Reasonable Expectations</strong></h2>
+          <p>
+            Fundraising takes a lot of effort — more so than simply posting a
+            profile and waiting for the money to roll in. It involves
+            independent marketing effort, hustle, and going out to ask people
+            for contributions. Your fundraising goal should take into account
+            how big your network is, how efficiently you put your deal in front
+            of them, and finally how much people turn up to contribute to each
+            reward. <br />
+            What matters is the company's market presence and acceptance among
+            the community.
+          </p>
+          <p class="alert alert-primary">
+            We'll walk you through over mail and message once your application
+            is approved, but it's important that you be handy with the above
+            points.
+          </p>
+        </div>
+        <div class="w-50">
+          <p><strong>ON THIS PAGE</strong></p>
+          <a href="index.html#!/knowledgebase/investors/#1"
+            ><p class="text-muted">
+              <strong> Cancelling an investment</strong>
+            </p></a
+          >
+          <a href="index.html#!/knowledgebase/investors/#2"
+            ><p class="text-muted">
+              <strong> Can the startup reject my investment?</strong>
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

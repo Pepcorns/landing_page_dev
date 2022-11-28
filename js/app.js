@@ -5,11 +5,12 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/home.html"
         })
         .when("/knowledgebase/investors", {
-            templateUrl: "./templates/knowledge_base.html",
+            templateUrl: "./templates/knowledge_base_inv.html",
             controller: "knowledgeController"
         })
         .when("/knowledgebase/company", {
-            templateUrl: "green.htm"
+            templateUrl: "./templates/knowledge_base_cmp.html",
+            controller: "knowledgeController"
         })
         .when("/blue", {
             templateUrl: "blue.htm"
