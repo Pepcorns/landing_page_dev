@@ -129,7 +129,6 @@ nav {
     position: absolute;
     background: white;
     width: 100%;
-    height: 50vw;
     z-index: 1;
 }
 
@@ -165,10 +164,12 @@ nav {
 }
 
 @media (min-width:1400px) and (max-width:1920px) {
-    #blackbg {
-        height: calc(390px + 0.33333vw);
+
+    #whitebg {
+        height: calc(590px + 0.33333vw);
     }
 
+    #blackbg,
     #makered {
         height: calc(390px + 0.33333vw);
     }
@@ -185,10 +186,11 @@ nav {
 
 
 @media (min-width:1025px) and (max-width:1399px) {
-    #blackbg {
-        height: calc(290px + 0.33333vw);
+    #whitebg {
+        height: calc(490px + 0.33333vw);
     }
 
+    #blackbg,
     #makered {
         height: calc(290px + 0.33333vw);
     }
@@ -203,10 +205,11 @@ nav {
 }
 
 @media (min-width:769px) and (max-width:1024px) {
-    #blackbg {
-        height: calc(210px + 0.33333vw);
+    #whitebg {
+        height: calc(410px + 0.33333vw);
     }
 
+    #blackbg,
     #makered {
         height: calc(210px + 0.33333vw);
     }
