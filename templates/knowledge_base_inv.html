@@ -33,6 +33,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <a href="#!/knowledgebase/company">
@@ -60,6 +61,65 @@
                   <li>Who can fundraise?</li>
                   <li>How do we charge?/li></li>
                   <li>Campaign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <a href="">
+                <a href="#!knowledgebase/faq">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Underrepresented
+                  </button>
+                </a>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li ng-click="setSubMenuIndex(1)">SHE.E.O</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <a href="#!knowledgebase/faq">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  FAQ
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li ng-click="setSubMenuIndex(2)">Founder FAQ</li>
+                  <li ng-click="setSubMenuIndex(3)">Investor FAQ</li>
                 </ul>
               </div>
             </div>

@@ -12,7 +12,8 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/knowledge_base_cmp.html",
             controller: "knowledgeController"
         })
-        .when("/blue", {
-            templateUrl: "blue.htm"
+        .when("/knowledgebase/faq", {
+            templateUrl: "./templates/faq.html",
+            controller: "knowledgeController"
         });
 });

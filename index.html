@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
     <script src="./vendors/js/bootstrap.bundle.min.js"></script>
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </head>
   <body>
     <div ng-app="app">
@@ -44,6 +54,120 @@
         </ul>
       </nav>
       <div ng-view></div>
+      <footer class="p-5">
+        <div class="d-flex flex-row gap-5 p-5 justify-content-around">
+          <ul class="d-flex flex-column gap-4 justify-content-center">
+            <li><img src="./assets/logo.png" alt="" class="logo" /></li>
+            <li>
+              <span class="text-light"
+                >Enabling everyday people to <br />invest in startups they
+                <br />
+                believe in</span
+              >
+            </li>
+            <li>
+              <ul class="d-flex flex-row gap-4">
+                <li>
+                  <a href="">
+                    <img src="./assets/facebook.svg" style="width: 20px" />
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="./assets/instagram.svg"
+                      alt=""
+                      style="width: 20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/twitter.svg" alt="" style="width: 20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="./assets/linkedin.svg"
+                      alt=""
+                      style="width: 20px"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="d-flex flex-column gap-2">
+            <h4 class="text-light">FOR INVESTORS</h4>
+            <li><a href="">Start Investing</a></li>
+            <li><a href="">How Investing works</a></li>
+            <li><a href="">Investor FAQ</a></li>
+          </ul>
+          <ul class="d-flex flex-column gap-2">
+            <h4 class="text-light">FOR STARTUPS</h4>
+            <li><a href="">Raise Capital</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Investor FAQ</a></li>
+            <li><a href="">SAFE Notes</a></li>
+          </ul>
+          <ul class="d-flex flex-column gap-2">
+            <h4 class="text-light">COMPANY</h4>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">We're hiring</a></li>
+          </ul>
+          <ul class="d-flex flex-column gap-2">
+            <div class="d-flex flex-row gap-3">
+              <span class="material-symbols-outlined text-light">
+                location_on
+              </span>
+              <li class="text-light">Kanpur| Bengaluru |Delhi</li>
+            </div>
+            <div class="d-flex flex-row gap-3">
+              <span class="material-symbols-outlined text-light"> mail </span>
+              <li>
+                <a href="mailto:support@pepcorns.com">support@pepcorns.com</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="py-5 mt-3">
+          <ul class="d-flex flex-row gap-5 justify-content-center">
+            <li><a href="">Terms Of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Disclaimer</a></li>
+            <li><a href="">Risks</a></li>
+          </ul>
+        </div>
+        <div class="p-5">
+          <p class="text-muted">
+            <a href="https://pepcorns.com" class="text-primary">
+              www.pepcorns.com</a
+            >
+            (“Platform”) is a website owned and operated by Pepcorns
+            Technologies Private Limited (“Pepcorns”), which is neither a
+            registered stock exchange, an investment advisor nor a funding
+            portal and is not registered with the Securities Exchange Board of
+            India (“SEBI”). Nothing contained on this Platform shall be
+            construed as an authorization by the SEBI to solicit investments nor
+            should the Platform be construed as a SEBI authorized crowdfunding
+            platform or a stock exchange, or their equivalent. The securities
+            offered by any company registered on Platform are not traded on any
+            stock exchange recognised by SEBI. Pepcorns does not allow any
+            secondary market trading of securities on the Platform. By accessing
+            this Platform and any pages thereof, you agree to be bound by the
+            <a href="" class="text-primary"> Terms of Use </a> and
+            <a href="" class="text-primary"> Privacy Policy </a>. Investing in
+            start-ups and early-stage businesses involves risks, including
+            illiquidity, lack of dividends, loss of investment and dilution, and
+            it should be done only as part of a diversified portfolio. Pepcorns
+            is targeted exclusively at investors who are sufficiently
+            sophisticated to understand these risks and make their own
+            investment decisions. Please read our
+            <a href="" class="text-primary"> RISK POLICY </a>.
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script src="./js/app.js"></script>
