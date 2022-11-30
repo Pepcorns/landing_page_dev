@@ -102,7 +102,7 @@ footer {
 }
 
 /*--nav--*/
-.nav {
+.nav1 {
     background-color: var(--dark-bg);
 }
 
@@ -136,11 +136,58 @@ footer {
     transition: 0.25s ease-in-out;
 }
 
-/*------*/
-
 .fS-1 {
     font-size: 4vw;
 }
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1B1A1A;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-content a {
+    color: var(--light-bg);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2E2E2E;
+    border-left: solid 2px var(--primary);
+    transition: 0.2s ease-in-out;
+}
+
+.dropDown:hover .dropdown-content {
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+
+.dropDown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/*------*/
+
 
 .body-list li {
     margin-bottom: 3rem !important;
@@ -204,7 +251,7 @@ footer {
     left: 225px;
 }
 
-/*------------*/
+
 #whitebg {
     position: absolute;
     background: white;
@@ -243,6 +290,25 @@ footer {
     line-height: 1;
 }
 
+/*KnowledgeBase*/
+.actv {
+    background-color: var(--secondary);
+    border-left: solid 2px var(--primary) !important;
+}
+
+.acc-men {
+    padding: 0.5rem 1rem !important;
+    border-left: solid 1px rgba(255, 255, 255, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.acc-men:hover {
+    background-color: var(--secondary);
+    border-left: solid 2px var(--primary);
+    transition: 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+}
+
 /*MEDIA QUERIES*/
 
 @media (min-width:1441px) and (max-width:1920px) {
@@ -275,7 +341,6 @@ footer {
     .topNav {
         display: none;
     }
-
 }
 
 

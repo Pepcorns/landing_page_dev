@@ -3761,6 +3761,7 @@ fieldset:disabled .btn {
     border-radius: var(--bs-dropdown-border-radius)
 }
 
+.dropdown-menu[hover],
 .dropdown-menu[data-bs-popper] {
     top: 100%;
     left: 0;
@@ -3771,6 +3772,7 @@ fieldset:disabled .btn {
     --bs-position: start
 }
 
+.dropdown-menu[hover],
 .dropdown-menu-start[data-bs-popper] {
     right: auto;
     left: 0
@@ -4226,7 +4228,8 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
     isolation: isolate;
-    border-color: var(--bs-nav-tabs-link-hover-border-color)
+    /* border-color: var(--bs-nav-tabs-link-hover-border-color) */
+    cursor: pointer;
 }
 
 .nav-tabs .nav-link.disabled,
@@ -4991,13 +4994,13 @@ fieldset:disabled .btn {
 }
 
 .accordion {
-    --bs-accordion-color: #000000;
-    --bs-accordion-bg: #fff;
+    --bs-accordion-color: #ffffff;
+    --bs-accordion-bg: black;
     --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: var(--bs-border-color);
-    --bs-accordion-border-width: 1px;
-    --bs-accordion-border-radius: 0.375rem;
-    --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
+    --bs-accordion-border-width: 0px;
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
     --bs-accordion-btn-padding-x: 1.25rem;
     --bs-accordion-btn-padding-y: 1rem;
     --bs-accordion-btn-color: #f7f7f7;
@@ -8750,6 +8753,18 @@ fieldset:disabled .btn {
 
 .p-5 {
     padding: 3rem !important
+}
+
+.p-6 {
+    padding: 6rem !important
+}
+
+.p-7 {
+    padding: 7rem !important
+}
+
+.p-8 {
+    padding: 8rem !important
 }
 
 .px-0 {

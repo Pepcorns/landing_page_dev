@@ -26,7 +26,7 @@
   <body>
     <div ng-app="app">
       <nav
-        class="d-flex flex-row px-5 py-4 align-items-center justify-content-between nav"
+        class="d-flex flex-row px-5 py-4 align-items-center justify-content-between nav1"
       >
         <ul class="d-flex d-flex-row gap-5">
           <li>
@@ -47,31 +47,19 @@
               >Raise Funding</a
             >
           </li>
-          <li
-            class="text-light"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <span class="menuItem"> Learn</span>
-          </li>
-
-          <ul class="dropdown-menu px-2">
-            <li><a class="dropdown-item" href="#">SHE.E.O</a></li>
-            <li>
+          <li class="text-light dropDown">
+            <span class="menuItem dropBtn">Learn</span>
+            <div class="dropdown-content p-1">
+              <a class="dropdown-item" href="#">SHE.E.O</a>
               <a class="dropdown-item" href="https://blog.pepcorns.com/"
                 >Blog</a
               >
-            </li>
-            <li>
               <a class="dropdown-item" href="#!/knowledgebase/faq">FAQ</a>
-            </li>
-            <li>
               <a class="dropdown-item" href="#!/knowledgebase/investors"
                 >Knowledge Base</a
-              >
-            </li>
-            <li><a class="dropdown-item" href="#!/about">About</a></li>
-          </ul>
+              ><a class="dropdown-item" href="#!/about">About</a>
+            </div>
+          </li>
         </ul>
 
         <ul class="d-flex flex-row gap-5">
