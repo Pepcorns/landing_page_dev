@@ -1,6 +1,6 @@
 <div>
   <section>
-    <div class="d-flex flex-row p-5 gap-5">
+    <div class="d-flex flex-xl-row p-5 gap-5 flex-lg-column">
       <div class="sideNav">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -12,9 +12,8 @@
                 data-bs-target="#panelsStayOpen-collapseOne"
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
-                ng-click="setSubMenuIndex(1)"
               >
-                For Investors
+                Investors
               </button>
             </h2>
             <div
@@ -24,6 +23,7 @@
             >
               <div class="accordion-body">
                 <ul>
+                  <li ng-click="setSubMenuIndex(1)">For Investors</li>
                   <li ng-click="setSubMenuIndex(2)">How It Works</li>
                   <li ng-click="setSubMenuIndex(3)">SAFE notes</li>
                   <li ng-click="setSubMenuIndex(4)">Earning a return</li>
@@ -45,7 +45,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo"
                 >
-                  For Companies
+                  Companies
                 </button>
               </a>
             </h2>
@@ -125,6 +125,61 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="topNav">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li
+              ng-click="setSubMenuIndex(1)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '1'}"
+            >
+              For Investors
+            </li>
+            <li
+              ng-click="setSubMenuIndex(2)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '2'}"
+            >
+              How it works?
+            </li>
+            <li
+              ng-click="setSubMenuIndex(3)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '3'}"
+            >
+              SAFE Notes
+            </li>
+            <li
+              ng-click="setSubMenuIndex(4)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '4'}"
+            >
+              Earning a return
+            </li>
+            <li
+              ng-click="setSubMenuIndex(5)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '5'}"
+            >
+              Pepcorns Fee
+            </li>
+            <li
+              ng-click="setSubMenuIndex(6)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '6'}"
+            >
+              Risks
+            </li>
+          </ol>
+        </nav>
       </div>
 
       <div ng-if="isSetSubMenuIndex(1)" class="d-flex flex-row gap-5">

@@ -26,7 +26,7 @@
   <body>
     <div ng-app="app">
       <nav
-        class="d-flex flex-row px-5 py-4 align-items-center justify-content-between"
+        class="d-flex flex-row px-5 py-4 align-items-center justify-content-between nav"
       >
         <ul class="d-flex d-flex-row gap-5">
           <li>
@@ -37,11 +37,41 @@
         </ul>
 
         <ul class="d-flex flex-row gap-5 justify-align-center">
-          <li><a href="" class="menuItem">Startups</a></li>
-          <li><a href="" class="menuItem">Raise Funding</a></li>
           <li>
-            <a href="#!knowledgebase/investors" class="menuItem">Learn</a>
+            <a href="https://app.pepcorns.com/#!/home/allcamp" class="menuItem"
+              >Startups</a
+            >
           </li>
+          <li>
+            <a href="https://app.pepcorns.com/#!/login" class="menuItem"
+              >Raise Funding</a
+            >
+          </li>
+          <li
+            class="text-light"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="menuItem"> Learn</span>
+          </li>
+
+          <ul class="dropdown-menu px-2">
+            <li><a class="dropdown-item" href="#">SHE.E.O</a></li>
+            <li>
+              <a class="dropdown-item" href="https://blog.pepcorns.com/"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#!/knowledgebase/faq">FAQ</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#!/knowledgebase/investors"
+                >Knowledge Base</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#!/about">About</a></li>
+          </ul>
         </ul>
 
         <ul class="d-flex flex-row gap-5">
@@ -53,7 +83,11 @@
           </li>
         </ul>
       </nav>
+
+      <!--Main Window Start-->
       <div ng-view></div>
+      <!--Main Window End-->
+
       <footer class="p-5">
         <div class="d-flex flex-row gap-5 p-5 justify-content-around">
           <ul class="d-flex flex-column gap-4 justify-content-center">

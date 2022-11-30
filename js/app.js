@@ -15,5 +15,8 @@ app.config(function ($routeProvider) {
         .when("/knowledgebase/faq", {
             templateUrl: "./templates/faq.html",
             controller: "knowledgeController"
+        })
+        .when("/about", {
+            templateUrl: "./templates/about.html"
         });
 });

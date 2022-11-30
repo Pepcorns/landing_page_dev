@@ -1,6 +1,7 @@
 app.controller("knowledgeController", ["$scope", function ($scope) {
     var self = $scope;
     self.selectedMenu = 1
+    self.selectedNav = 1
 
     self.isSetSubMenuIndex = function (index) {
         if (self.subMenuIndex == index) {
@@ -12,6 +13,7 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
 
     self.subMenuIndex = 1;
     self.setSubMenuIndex = function (index) {
+        self.selectedNav = index
         if (self.subMenuIndex != index) {
             self.subMenuIndex = index;
         }

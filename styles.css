@@ -13,6 +13,7 @@
     --light-bg: #FAF9FF;
 
     --primary: #2829C1;
+    --secondary: #15151E;
 }
 
 * {
@@ -51,9 +52,6 @@ input {
 
 button {
     border: none;
-    padding: 1rem 2rem;
-    color: var(--light-bg);
-    background-color: var(--primary);
 }
 
 button:focus,
@@ -65,8 +63,8 @@ a:hover {
     color: var(--light-bg);
 }
 
-nav {
-    background-color: var(--dark-bg);
+section {
+    padding: 6rem 0rem;
 }
 
 footer {
@@ -74,6 +72,40 @@ footer {
 }
 
 /*----GLOBAL STYLING----*/
+
+.primaryBtn {
+    padding: 1rem 2rem;
+    color: var(--light-bg);
+    background-color: var(--primary);
+    border: solid 1px var(--primary);
+}
+
+.secondaryBtn {
+    padding: 1rem 2rem;
+    color: var(--light-bg);
+    border: solid 1px var(--light-bg);
+    background-color: rgba(245, 222, 179, 0);
+}
+
+.crd {
+    height: 350px;
+    width: 350px;
+    background-color: var(--secondary);
+    border-radius: 2px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.crd:hover {
+    border-bottom: solid 2px var(--primary);
+    transition: 0.2s ease-in-out;
+}
+
+/*--nav--*/
+.nav {
+    background-color: var(--dark-bg);
+}
+
 .navButton {
     background-color: var(--light-bg);
     padding: 0.5rem 1rem;
@@ -103,6 +135,8 @@ footer {
     background-color: var(--light-bg);
     transition: 0.25s ease-in-out;
 }
+
+/*------*/
 
 .fS-1 {
     font-size: 4vw;
@@ -146,6 +180,30 @@ footer {
     list-style-position: inside;
 }
 
+.poly {
+    clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+    background-color: var(--primary);
+    height: 60px;
+    width: 300px;
+}
+
+.arrow1,
+.arrow2 {
+    clip-path: polygon(40% 10%, 40% 0%, 95% 50%, 40% 100%, 40% 90%, 85% 50%);
+    background-color: var(--dark-bg);
+    height: 50px;
+    width: 45px;
+    position: relative;
+}
+
+.arrow1 {
+    left: 250px;
+}
+
+.arrow2 {
+    left: 225px;
+}
+
 /*------------*/
 #whitebg {
     position: absolute;
@@ -185,6 +243,8 @@ footer {
     line-height: 1;
 }
 
+/*MEDIA QUERIES*/
+
 @media (min-width:1441px) and (max-width:1920px) {
 
     #whitebg {
@@ -202,6 +262,18 @@ footer {
 
     .hero-text-xl {
         font-size: calc(40rem + 00.33333vw);
+    }
+
+    .sideNav {
+        min-width: 300px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 30px;
+        height: 100%;
+    }
+
+    .topNav {
+        display: none;
     }
 
 }
@@ -224,6 +296,10 @@ footer {
     .hero-text-xl {
         font-size: calc(30rem + 00.33333vw);
     }
+
+    .sideNav {
+        display: none;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -243,36 +319,8 @@ footer {
     .hero-text-xl {
         font-size: calc(22rem + 00.33333vw);
     }
-}
 
-.poly {
-    clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
-    background-color: var(--primary);
-    height: 60px;
-    width: 300px;
-}
-
-.arrow1,
-.arrow2 {
-    clip-path: polygon(40% 10%, 40% 0%, 95% 50%, 40% 100%, 40% 90%, 85% 50%);
-    background-color: var(--dark-bg);
-    height: 50px;
-    width: 45px;
-    position: relative;
-}
-
-.arrow1 {
-    left: 250px;
-}
-
-.arrow2 {
-    left: 225px;
-}
-
-.sideNav {
-    min-width: 300px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 30px;
-    height: 100%;
+    .sideNav {
+        display: none;
+    }
 }
