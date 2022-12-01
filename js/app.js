@@ -18,5 +18,11 @@ app.config(function ($routeProvider) {
         })
         .when("/about", {
             templateUrl: "./templates/about.html"
+        }).when("/terms", {
+            templateUrl: "./templates/terms.html"
+        }).when("/risks", {
+            templateUrl: "./templates/risks.html"
+        }).when("/privacy", {
+            templateUrl: "./templates/privacy.html"
         });
 });

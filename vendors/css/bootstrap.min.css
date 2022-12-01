@@ -12404,6 +12404,10 @@ fieldset:disabled .btn {
         padding: 3rem !important
     }
 
+    .p-xxl-8 {
+        padding: 8rem !important
+    }
+
     .px-xxl-0 {
         padding-right: 0 !important;
         padding-left: 0 !important

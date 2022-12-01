@@ -1,5 +1,5 @@
 <div>
-  <section>
+  <section style="background-color: var(--dark-bg)">
     <div class="d-flex flex-row p-5 gap-5">
       <div class="sideNav">
         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -7,14 +7,14 @@
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <a href="#!knowledgebase/investors">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fs-4"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne"
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
-                  Investors
+                  <strong> INVESTORS</strong>
                 </button>
               </a>
             </h2>
@@ -35,18 +35,19 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <a href="#!/knowledgebase/company">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fs-4"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseTwo"
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo"
                 >
-                  Companies
+                  <strong> COMPANIES</strong>
                 </button>
               </a>
             </h2>
@@ -66,18 +67,19 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <a href="">
                 <button
-                  class="accordion-button"
+                  class="accordion-button fs-4"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseThree"
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
-                  Underrepresented
+                  <strong> UNDERREPRESENTED</strong>
                 </button>
               </a>
             </h2>
@@ -88,23 +90,30 @@
             >
               <div class="accordion-body">
                 <ul>
-                  <li ng-click="setSubMenuIndex(1)">SHE.E.O</li>
+                  <li
+                    ng-click="setSubMenuIndex(1)"
+                    class="fs-4 acc-men"
+                    ng-class="{'actv':selectedNav == '1'}"
+                  >
+                    SHE.E.O
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
               <a href="">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fs-4"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseFour"
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFour"
                 >
-                  FAQ
+                  <strong> FAQ</strong>
                 </button>
               </a>
             </h2>
@@ -115,8 +124,20 @@
             >
               <div class="accordion-body">
                 <ul>
-                  <li ng-click="setSubMenuIndex(2)">Founder FAQ</li>
-                  <li ng-click="setSubMenuIndex(3)">Investor FAQ</li>
+                  <li
+                    ng-click="setSubMenuIndex(2)"
+                    class="fs-4 acc-men"
+                    ng-class="{'actv':selectedNav == '2'}"
+                  >
+                    Founder FAQ
+                  </li>
+                  <li
+                    ng-click="setSubMenuIndex(3)"
+                    class="fs-4 acc-men"
+                    ng-class="{'actv':selectedNav == '3'}"
+                  >
+                    Investor FAQ
+                  </li>
                 </ul>
               </div>
             </div>
@@ -126,15 +147,18 @@
 
       <div ng-if="isSetSubMenuIndex(1)" class="d-flex flex-row gap-5">
         <div
-          class="p-5 border border-grey border-1 rounded-2 d-flex flex-column gap-3 container-md"
+          class="p-xxl-8 p-xl-5 d-flex flex-column gap-5 container-md text-light"
+          style="background-color: #1b1a1a"
         >
-          <h1>SHE.E.O 👩‍🦰</h1>
-          <p class="text-muted fs-4">
-            Let's smash patriarchy, smash prejudice, empowering women
-            entrepreneurs
-          </p>
-          <p>
-            'She.E.O' is Pepcorns initiative to level the playing field for
+          <div class="d-flex flex-column gap-4">
+            <h1 class="fS-1">SHE.E.O</h1>
+            <p class="text-muted fs-4">
+              Let's smash patriarchy, smash prejudice, empowering women
+              entrepreneurs
+            </p>
+          </div>
+          <p class="fs-4">
+            'SHE.E.O' is Pepcorns initiative to level the playing field for
             female entrepreneurs. Inclusiveness and diversity are the only way
             forward to any progressive society. Our goal with She.E.O is to not
             only encourage a particular gender to build and scale their
@@ -152,64 +176,35 @@
             >
           </p>
         </div>
-        <div class="w-50">
-          <p><strong>ON THIS PAGE</strong></p>
-          <a href="index.html#!/knowledgebase/investors/#1"
-            ><p class="text-muted">
-              <strong> Cancelling an investment</strong>
-            </p></a
-          >
-          <a href="index.html#!/knowledgebase/investors/#2"
-            ><p class="text-muted">
-              <strong> Can the startup reject my investment?</strong>
-            </p></a
-          >
-        </div>
       </div>
 
       <div ng-if="isSetSubMenuIndex(2)" class="d-flex flex-row gap-5">
-        <div class="p-5 border border-grey border-1 rounded-2 container-md">
-          <h1>Founder FAQ</h1>
-          <p class="text-muted fs-4">
-            We will format this as we will answer you questions
-          </p>
+        <div
+          class="p-xxl-8 p-xl-5 d-flex flex-column gap-5 container-md text-light"
+          style="background-color: #1b1a1a"
+        >
+          <div class="d-flex flex-column gap-4">
+            <h1 class="fS-1">Founder FAQ</h1>
+            <p class="text-muted fs-4">
+              We will format this as we will answer you questions
+            </p>
+          </div>
           <p class="alert alert-primary">COMING SOON</p>
-        </div>
-        <div class="w-50">
-          <p><strong>ON THIS PAGE</strong></p>
-          <a href="index.html#!/knowledgebase/investors/#1"
-            ><p class="text-muted">
-              <strong> Cancelling an investment</strong>
-            </p></a
-          >
-          <a href="index.html#!/knowledgebase/investors/#2"
-            ><p class="text-muted">
-              <strong> Can the startup reject my investment?</strong>
-            </p></a
-          >
         </div>
       </div>
 
       <div ng-if="isSetSubMenuIndex(3)" class="d-flex flex-row gap-5">
-        <div class="p-5 border border-grey border-1 rounded-2 container-md">
-          <h1>Investor FAQ</h1>
-          <p class="text-muted fs-4">
-            We will format this as we will answer you questions
-          </p>
+        <div
+          class="p-xxl-8 p-xl-5 d-flex flex-column gap-5 container-md text-light"
+          style="background-color: #1b1a1a"
+        >
+          <div class="d-flex flex-column gap-4">
+            <h1 class="fS-1">Investor FAQ</h1>
+            <p class="text-muted fs-4">
+              We will format this as we will answer you questions
+            </p>
+          </div>
           <p class="alert alert-primary">COMING SOON</p>
-        </div>
-        <div class="w-50">
-          <p><strong>ON THIS PAGE</strong></p>
-          <a href="index.html#!/knowledgebase/investors/#1"
-            ><p class="text-muted">
-              <strong> Cancelling an investment</strong>
-            </p></a
-          >
-          <a href="index.html#!/knowledgebase/investors/#2"
-            ><p class="text-muted">
-              <strong> Can the startup reject my investment?</strong>
-            </p></a
-          >
         </div>
       </div>
     </div>
