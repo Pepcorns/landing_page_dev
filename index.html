@@ -25,6 +25,7 @@
   </head>
   <body>
     <div ng-app="app">
+      <!--large devices navbar -->
       <nav
         class="d-flex flex-row px-5 py-4 align-items-center justify-content-between nav1"
       >
@@ -72,19 +73,98 @@
         </ul>
       </nav>
 
+      <!--small devices navbar-->
+      <nav
+        class="d-flex flex-row px-3 py-4 align-items-center justify-content-between nav2"
+      >
+        <ul>
+          <li>
+            <a href="#!/"
+              ><img src="./assets/logo.png" alt="" class="logo"
+            /></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img
+              src="./assets/icons/ham.svg"
+              alt=""
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+            />
+          </li>
+        </ul>
+      </nav>
+
+      <!--offcanvas-->
+      <div
+        class="offcanvas offcanvas-start py-2"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="">
+            <img src="./assets/logo.png" class="logo" alt="" />
+          </a>
+          <button
+            type="button"
+            class="btn-close text-bg-light"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="d-flex flex-column gap-3">
+            <li>
+              <a
+                href="https://app.pepcorns.com/#!/home/allcamp"
+                class="menuItem"
+                >Startups</a
+              >
+            </li>
+            <li>
+              <a href="https://app.pepcorns.com/#!/login" class="menuItem"
+                >Raise Funding</a
+              >
+            </li>
+
+            <li><a href="" class="menuItem">Login</a></li>
+
+            <li>
+              <a href="">
+                <span class="navButton"> Get Started</span>
+              </a>
+            </li>
+
+            <hr class="text-light" />
+
+            <div class="d-flex flex-column gap-3 px-2">
+              <li class="text-muted fs-3">Learn</li>
+              <a class="text-light" href="#">SHE.E.O</a>
+              <a class="text-light" href="https://blog.pepcorns.com/">Blog</a>
+              <a class="text-light" href="#!/knowledgebase/faq">FAQ</a>
+              <a class="text-light" href="#!/knowledgebase/investors"
+                >Knowledge Base</a
+              ><a class="text-light" href="#!/about">About</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+
       <!--Main Window Start-->
       <div ng-view></div>
       <!--Main Window End-->
 
-      <footer class="p-5">
-        <div class="d-flex flex-row gap-5 p-5 justify-content-around">
-          <ul class="d-flex flex-column gap-4 justify-content-center">
+      <footer class="p-lg-5">
+        <div class="p-5 row row-cols-1 row-cols-xxl-5 gap-xxl-0 gap-5">
+          <ul class="col d-flex flex-column gap-4 justify-content-center">
             <li><img src="./assets/logo.png" alt="" class="logo" /></li>
             <li>
               <span class="text-light"
-                >Enabling everyday people to <br />invest in startups they
-                <br />
-                believe in</span
+                >Enabling everyday people to invest <br />
+                in startups they believe in</span
               >
             </li>
             <li>
@@ -128,27 +208,31 @@
               </ul>
             </li>
           </ul>
-          <ul class="d-flex flex-column gap-2">
+
+          <ul class="col d-flex flex-column gap-2">
             <h4 class="text-light">FOR INVESTORS</h4>
             <li><a href="">Start Investing</a></li>
             <li><a href="">How Investing works</a></li>
             <li><a href="">Investor FAQ</a></li>
           </ul>
-          <ul class="d-flex flex-column gap-2">
+
+          <ul class="col d-flex flex-column gap-2">
             <h4 class="text-light">FOR STARTUPS</h4>
             <li><a href="">Raise Capital</a></li>
             <li><a href="">How it works</a></li>
             <li><a href="">Investor FAQ</a></li>
             <li><a href="">SAFE Notes</a></li>
           </ul>
-          <ul class="d-flex flex-column gap-2">
+
+          <ul class="col d-flex flex-column gap-2">
             <h4 class="text-light">COMPANY</h4>
             <li><a href="#!/about">About</a></li>
             <li><a href="https://blog.pepcorns.com/">Blog</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">We're hiring</a></li>
           </ul>
-          <ul class="d-flex flex-column gap-2">
+
+          <ul class="col d-flex flex-column gap-2">
             <div class="d-flex flex-row gap-3">
               <span class="material-symbols-outlined text-light">
                 location_on
@@ -164,15 +248,15 @@
           </ul>
         </div>
         <div class="py-5 mt-3">
-          <ul class="d-flex flex-row gap-5 justify-content-center">
+          <ul class="d-flex flex-row flex-wrap gap-5 justify-content-center">
             <li><a href="#!/terms">Terms Of Use</a></li>
             <li><a href="#!/privacy">Privacy Policy</a></li>
             <li><a href="">Disclaimer</a></li>
             <li><a href="#!/risks">Risks</a></li>
           </ul>
         </div>
-        <div class="p-5">
-          <p class="text-muted">
+        <div class="p-lg-5 p-4">
+          <p class="text-muted text-justify">
             <a href="https://pepcorns.com" class="text-primary">
               www.pepcorns.com</a
             >
