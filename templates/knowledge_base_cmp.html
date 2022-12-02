@@ -1,6 +1,6 @@
 <div>
   <section style="background-color: var(--dark-bg)">
-    <div class="d-flex flex-row p-5 gap-5">
+    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-lg-column">
       <div class="sideNav">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -165,9 +165,64 @@
         </div>
       </div>
 
+      <div class="topNav">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb gap-5 justify-content-center">
+            <li
+              ng-click="setSubMenuIndex(1)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '1'}"
+            >
+              For Companies
+            </li>
+            <li
+              ng-click="setSubMenuIndex(2)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '2'}"
+            >
+              Why Pepcorns?
+            </li>
+            <li
+              ng-click="setSubMenuIndex(3)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '3'}"
+            >
+              How it works?
+            </li>
+            <li
+              ng-click="setSubMenuIndex(4)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '4'}"
+            >
+              Who can fundraise?
+            </li>
+            <li
+              ng-click="setSubMenuIndex(5)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '5'}"
+            >
+              How do we charge?
+            </li>
+            <li
+              ng-click="setSubMenuIndex(6)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '6'}"
+            >
+              Campaign
+            </li>
+          </ol>
+        </nav>
+      </div>
+
       <div ng-if="isSetSubMenuIndex(1)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-4">
@@ -338,7 +393,7 @@
 
       <div ng-if="isSetSubMenuIndex(2)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-4">
@@ -442,7 +497,7 @@
 
       <div ng-if="isSetSubMenuIndex(3)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-4">
@@ -512,7 +567,7 @@
 
       <div ng-if="isSetSubMenuIndex(4)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-4">
@@ -667,7 +722,7 @@
 
       <div ng-if="isSetSubMenuIndex(5)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-3">
@@ -698,7 +753,7 @@
 
       <div ng-if="isSetSubMenuIndex(6)" class="d-flex flex-row gap-5">
         <div
-          class="p-8 d-flex flex-column gap-5 container-md text-light"
+          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
           style="background-color: #1b1a1a"
         >
           <div class="d-flex flex-column gap-4">

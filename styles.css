@@ -414,6 +414,10 @@ footer {
     .sideNav {
         display: none;
     }
+
+    .topNav {
+        display: none;
+    }
 }
 
 @media (max-width:576px) {
@@ -433,6 +437,10 @@ footer {
         display: flex !important;
         z-index: 1000;
         position: relative;
+    }
+
+    .fS-1 {
+        font-size: 8vw;
     }
 
     #whitebg,
@@ -485,6 +493,14 @@ footer {
     .crd {
         width: 180px;
         height: 180px;
+    }
+
+    .sideNav {
+        display: none;
+    }
+
+    .topNav {
+        display: block;
     }
 
 }
