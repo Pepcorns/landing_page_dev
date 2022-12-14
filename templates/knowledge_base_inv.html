@@ -1,6 +1,6 @@
 <div>
   <section style="background-color: var(--dark-bg)">
-    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-lg-column">
+    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-lg-row">
       <div class="sideNav">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -42,7 +42,7 @@
                     class="fs-4 acc-men"
                     ng-class="{'actv':selectedNav == '3'}"
                   >
-                    SAFE notes
+                    Instruments
                   </li>
                   <li
                     ng-click="setSubMenuIndex(4)"
@@ -220,8 +220,7 @@
 
       <div ng-if="isSetSubMenuIndex(1)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
             <h1 class="fS-1">For Investors</h1>
@@ -320,12 +319,12 @@
           <div class="d-flex flex-column gap-3">
             <h3 class="text-muted">HOW PERKS, EQUITY AND REWARDS WORK?</h3>
             <p class="fs-5">
-              ​Everything you invest in is aligned with rewards and benefits.
+              Everything you invest in is aligned with rewards and benefits.
               Rewards include premium membership, early access deals and more.
-              If you are HNIs​(Accredited), you may directly invest in equity.
-              Investors, those who could not invest directly in equity, we
-              invest a little chunk for them, which is distributed among all
-              investors when we exit.
+              If you are HNIs(Accredited), you may directly invest in equity.
+              Investors, those who could not invest directly in equity, they can
+              invest as part of startup community for equity equivalent
+              benefits.
               <i> <strong> Yeah... reward bhi profit bhi!</strong> </i>
             </p>
           </div>
@@ -334,8 +333,7 @@
 
       <div ng-if="isSetSubMenuIndex(2)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
             <h1 class="fS-1">How it works?</h1>
@@ -396,11 +394,13 @@
           <div class="d-flex flex-column gap-3">
             <h3 class="text-muted" id="1">CANCELLING AN INVESTMENT</h3>
             <p class="fs-5">
-              You may cancel an investment under 10 days, from the date of
+              You may cancel an investment under 48 hours, from the date of
               investment you made. Remember, reducing your investment is
               considered as cancellation. For any such cancellation, you may
               click the given cancel button or write us at
-              Investment@pepcorns.com
+              <a href="mailto:investment@pepcorns.com"
+                >investment@pepcorns.com</a
+              >
             </p>
           </div>
 
@@ -420,57 +420,104 @@
 
       <div ng-if="isSetSubMenuIndex(3)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
-            <h1 class="fS-1">SAFE Notes</h1>
-            <p class="text-muted fs-4">
-              What the heck are SAFE(Simply Agreement for Future Equity)
+            <h1 class="fS-1">Instruments</h1>
+            <p class="text-muted fs-4">What the heck are Instruments?</p>
+          </div>
+
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-muted">INSTRUMENTS</h3>
+            <p class="fs-5">
+              Pepcorns offers a variety of inducements and advantages to
+              encourage the establishment of new businesses through the
+              following investment instruments or financing instruments-
             </p>
           </div>
 
           <div class="d-flex flex-column gap-3">
-            <h3 class="text-muted">WHAT ARE S.A.F.E NOTES?</h3>
+            <h3 class="text-muted">
+              SIMPLE AGREEMENT FOR FUTURE EQUITY (SAFE)
+            </h3>
             <p class="fs-5">
-              A SAFE is a popular method to invest in early-stage companies. At
-              its core, it’s an agreement – an investor puts money into a
-              startup today and both parties agree that, in the future, that
-              money can convert into stock. ​Y Combinator created SAFE back in
-              2013, and first time adopted in India by Mumbai based VC firm
-              100X.VC in 2019. ​Early-stage startups use SAFEs to delay the
-              arduous task of determining company valuation. This is also a less
-              complicated and much cheaper option than expensive equity rounds,
-              which might take months of deal negotiation - execution, and
-              serious money. The number of shares you receive is determined at
-              the next priced financing when professional investors – typically
-              venture capitalists – set the price for preferred stock. Then,
-              calculated by using the Valuation Cap and sometimes the Discount
-              Rate, your SAFE often converts into shares at a lower price than
-              the venture capitalists paid, since you invested earlier.​ ​Unlike
-              traditional Convertible Note, SAFEs are not a loan. As such, it
-              does not accrue interest, have a maturity date, or have a legal
-              obligation to be paid back. This makes it a simpler and cheaper
-              way to fund a startup, and it aligns better with the interests of
-              most early-stage equity investors who never wanted to be lenders
-              (after all, convertible notes are rarely, if ever, repaid in cash
-              - the startup goes bankrupt).
+              SAFE is usually termed as an equity derivative contract that
+              converts the initial capital invested into the future stock of the
+              company, based on contractual terms and conditions. Start-ups may
+              prefer SAFE notes because, unlike convertible notes, they are not
+              debt and therefore do not accrue interest (though for Indian legal
+              compliance purposes, SAFE notes carry a non-cumulative dividend @
+              0.0001% and are shown as CCPS).
             </p>
           </div>
 
           <div class="d-flex flex-column gap-3">
-            <h3 class="text-muted">HOW S.A.F.E NOT WORKS ON PEPCORNS</h3>
+            <h3 class="text-muted">CONVERTIBLE NOTES (CN)</h3>
             <p class="fs-5">
-              ​Investors using the SAFE get a financial stake in the company.
-              Investments are converted to equity when the company raises its
-              next round. If the company doesn't raise the next round, the
-              investment would be converted into shares after two years(2 yrs).
-              Read more about <strong> SAFE </strong> and
-              <strong> SAFE Primer</strong>.
+              CNs are issued as a ‘debt instrument’ in the form of a loan. It
+              can be issued only by a DPIIT-registered and recognized start-up
+              company. These are issued initially as a debt, which is repayable
+              at the option of the CN-holder. This instrument has proved to be
+              less broad and user-friendly owing to the lack of numerous
+              compliance requirements.
             </p>
           </div>
 
-          <ul class="nav nav-tabs">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-muted">
+              COMPULSORILY CONVERTIBLE DEBENTURES (CCDs)
+            </h3>
+            <p class="fs-5">
+              CCDs are hybrid securities as they are issued as debts but are
+              compulsorily converted to equity shares of the issuing companies.
+              Unlike Convertible Notes, CCDs can be issued by any private
+              limited company. Section 71(1) of the Companies Act, 2013
+              authorizes a company to issue CCDs. According to the RBI
+              Guidelines, they are treated as equity for all financial
+              statements and records but not as Share Capital of the Company.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-muted">
+              COMPULSORILY CONVERTIBLE PREFERENCE SHARES (CCPS)
+            </h3>
+            <p class="fs-5">
+              CCPS offers fixed dividends in priority and compulsorily converted
+              into equity shares at a predetermined event, not more than 20
+              years. These are the preferred choice and most favoured amongst
+              investors mainly for two reasons, i.e., the dividend is first paid
+              to preference shareholders, senior to equity or common
+              shareholders and they are also given priority in the event of
+              liquidation.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-muted">COMMUNITY STOCK OPTION POOL (CSOP)</h3>
+            <p class="fs-5">
+              CSOPs are options that have the same financial rights as equity
+              shares but no voting rights. It is purely a contractual agreement
+              entered into between the startup and the investor for benefitting
+              the investor from the financial benefits linked to the equity
+              issued by the company.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-muted">STOCK APPRECIATION RIGHTS (SARs)</h3>
+            <p class="fs-5">
+              A SAR or Phantom Shares is generally defined as the right to
+              receive the benefit of the increase or appreciation in the value
+              of company stock and it has been specifically defined by SEBI
+              under Regulation 2 (1) (zf) of SEBI (Share Based Employee
+              Benefits) Regulations, 2014. A SAR is normally paid in cash,
+              although it could also be settled in the equivalent value of a
+              stock.
+            </p>
+          </div>
+
+          <ul class="nav nav-tabs d-none">
             <li class="nav-item">
               <span
                 class="nav-link"
@@ -487,7 +534,7 @@
             </li>
           </ul>
 
-          <div ng-if="isSetTabIndex(1)">
+          <div ng-if="isSetTabIndex(1)" class="d-none">
             <div class="d-flex flex-column gap-2">
               <a
                 href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2F3xwRNJZJmIZdXzjtUnAR%2FA%20Primer%20on%20SAFE%20Notes.pdf?alt=media&token=e8f4e92c-15ad-48c2-9d75-87f22b9345b5"
@@ -506,7 +553,7 @@
             </div>
           </div>
 
-          <div ng-if="isSetTabIndex(2)">
+          <div ng-if="isSetTabIndex(2)" class="d-none">
             <div class="d-flex flex-column gap-2">
               <a
                 href="https://3765116499-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MWckcKR2Gb1DqJvUXGZ%2Fuploads%2F41Ab5OYEoQpanMswBxx6%2FA%20Primer%20on%20SWAP.pdf?alt=media&token=b69191c6-afc1-46ef-b435-ac52408cdbe8"
@@ -528,8 +575,7 @@
 
       <div ng-if="isSetSubMenuIndex(4)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
             <h1 class="fS-1">Earning a return</h1>
@@ -587,8 +633,7 @@
 
       <div ng-if="isSetSubMenuIndex(5)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
             <h1 class="fS-1">Pepcorns Fee</h1>
@@ -613,8 +658,7 @@
 
       <div ng-if="isSetSubMenuIndex(6)">
         <div
-          class="p-xxl-8 p-xl-5 p-3 d-flex flex-column gap-5 container-md text-light"
-          style="background-color: #1b1a1a"
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
           <div class="d-flex flex-column gap-4">
             <h1 class="fS-1">Risks</h1>

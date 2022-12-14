@@ -312,7 +312,29 @@ footer {
     line-height: 1;
 }
 
+.scrollImg {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    margin-bottom: 4rem;
+    height: 400px;
+    width: 300px;
+}
+
+.fade {
+    opacity: 1;
+    color: white;
+}
+
+
 /*KnowledgeBase*/
+.sideNav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
+    height: 100%;
+}
+
 .actv {
     background-color: var(--secondary);
     border-left: solid 2px var(--primary) !important;
@@ -354,10 +376,6 @@ footer {
 
     .sideNav {
         min-width: 300px;
-        position: sticky;
-        position: -webkit-sticky;
-        top: 30px;
-        height: 100%;
     }
 
     .topNav {
@@ -385,7 +403,7 @@ footer {
     }
 
     .sideNav {
-        min-width: 200px;
+        min-width: 300px;
     }
 
     .topNav {

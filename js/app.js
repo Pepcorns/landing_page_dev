@@ -1,4 +1,5 @@
-var app = angular.module("app", ["ngRoute"]);
+
+var app = angular.module("app", ["ngRoute", 'ngResource']);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
@@ -24,5 +25,8 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/risks.html"
         }).when("/privacy", {
             templateUrl: "./templates/privacy.html"
+        }).when("/refund", {
+            templateUrl: "./templates/refund_policy.html"
         });
 });
+

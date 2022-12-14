@@ -1,6 +1,5 @@
 app.controller("homeController", ["$scope", function ($scope) {
     var self = $scope;
-
     self.setPageNum = function (page) {
         if (self.pagenum !== page) {
             self.pagenum = page;
