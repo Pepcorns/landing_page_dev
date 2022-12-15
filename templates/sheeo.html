@@ -1,0 +1,185 @@
+<div>
+  <section style="background-color: var(--dark-bg)">
+    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-lg-row">
+      <div class="sideNav">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <a href="#!knowledgebase/investors">
+                <button
+                  class="accordion-button collapsed fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  <strong> INVESTORS</strong>
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>For Investors</li>
+                  <li>How It Works</li>
+                  <li>SAFE notes</li>
+                  <li>Earning a return</li>
+                  <li>Pepcorns Fee</li>
+                  <li>Risks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <a href="#!/knowledgebase/company">
+                <button
+                  class="accordion-button collapsed fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  <strong> COMPANIES</strong>
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>For Companies</li>
+                  <li>How it works?</li>
+                  <li>Who can fundraise?</li>
+                  <li>How do we charge?/li></li>
+                  <li>Campaign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <a href="">
+                <button
+                  class="accordion-button fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  <strong> UNDERREPRESENTED</strong>
+                </button>
+              </a>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li
+                    ng-click="setSubMenuIndex(1)"
+                    class="fs-4 acc-men"
+                    ng-class="{'actv':selectedNav == '1'}"
+                  >
+                    SHE.E.O
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <a href="#!knowledgebase/faq">
+                <button
+                  class="accordion-button collapsed fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  <strong> FAQ</strong>
+                </button>
+              </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="topNav">
+        <div class="d-flex flex-row justify-content-between px-3 mb-5">
+          <a href="#!/knowledgebase/investors" class="acc-men">Investors</a>
+          <a href="#!/knowledgebase/company" class="acc-men">Company</a>
+          <a
+            class="acc-men"
+            ng-click="setNavTabIndex(1)"
+            ng-class="{'actv':selectedNavTab == '1'}"
+            href="#!knowledgebase/sheeo"
+            >Underrepresented</a
+          >
+          <a class="acc-men" href="#!knowledgebase/faq">FAQ</a>
+        </div>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb gap-5 justify-content-center">
+            <li
+              ng-click="setSubMenuIndex(1)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '1'}"
+            >
+              SHE.E.O
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <div ng-if="isSetSubMenuIndex(1)">
+        <div
+          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
+        >
+          <div class="d-flex flex-column gap-4">
+            <h1 class="fS-1">SHE.E.O</h1>
+            <p class="text-muted fs-4">
+              Let's smash patriarchy, smash prejudice, empowering women
+              entrepreneurs
+            </p>
+          </div>
+          <p class="fs-4">
+            'SHE.E.O' is Pepcorns initiative to level the playing field for
+            female entrepreneurs. Inclusiveness and diversity are the only way
+            forward to any progressive society. Our goal with She.E.O is to not
+            only encourage a particular gender to build and scale their
+            business, but also to handhold their peers and support them as well.
+            We may blame dominance, but certainly it is not the answer. With
+            She.E.O now you have more opportunities to raise funds, pitch among
+            the like-minded community, earn initial traction, and perks of
+            Pepcorns credits.
+          </p>
+          <p class="alert alert-primary">
+            If you have any suggestions or feedback on how we can make She.E.O
+            drive more exuberant then do let us know. mail us:
+            <a class="text-dark" href="mailto:team@pepcorns.com"
+              >team@pepcorns.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

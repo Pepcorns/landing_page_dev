@@ -13,6 +13,10 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/knowledge_base_cmp.html",
             controller: "knowledgeController"
         })
+        .when("/knowledgebase/sheeo", {
+            templateUrl: "./templates/sheeo.html",
+            controller: "knowledgeController"
+        })
         .when("/knowledgebase/faq", {
             templateUrl: "./templates/faq.html",
             controller: "knowledgeController"
@@ -27,6 +31,8 @@ app.config(function ($routeProvider) {
             templateUrl: "./templates/privacy.html"
         }).when("/refund", {
             templateUrl: "./templates/refund_policy.html"
+        }).when("/contact", {
+            templateUrl: "./templates/contact.html"
         });
 });
 

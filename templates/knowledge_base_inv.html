@@ -105,7 +105,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <a href="">
-                <a href="#!knowledgebase/faq">
+                <a href="#!knowledgebase/sheeo">
                   <button
                     class="accordion-button collapsed fs-4"
                     type="button"
@@ -164,6 +164,19 @@
       </div>
 
       <div class="topNav">
+        <div class="d-flex flex-row flex-wrap gap-1 px-sm-4 px-0 mb-5">
+          <a
+            href=""
+            ng-click="setNavTabIndex(1)"
+            class="acc-men"
+            ng-class="{'actv':selectedNavTab == '1'}"
+            >Investors</a
+          >
+          <a href="#!/knowledgebase/company" class="acc-men">Company</a>
+          <a class="acc-men" href="#!knowledgebase/sheeo">Underrepresented</a>
+          <a class="acc-men" href="#!knowledgebase/faq">FAQ</a>
+        </div>
+
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb gap-5 justify-content-center">
             <li

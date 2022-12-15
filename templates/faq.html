@@ -70,33 +70,28 @@
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <a href="">
+              <a href="#!knowledgebase/sheeo">
                 <button
-                  class="accordion-button fs-4"
+                  class="accordion-button collapsed fs-4"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
                   <strong> UNDERREPRESENTED</strong>
                 </button>
               </a>
             </h2>
+
             <div
               id="panelsStayOpen-collapseThree"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingThree"
             >
               <div class="accordion-body">
                 <ul>
-                  <li
-                    ng-click="setSubMenuIndex(1)"
-                    class="fs-4 acc-men"
-                    ng-class="{'actv':selectedNav == '1'}"
-                  >
-                    SHE.E.O
-                  </li>
+                  <li class="fs-4 acc-men">SHE.E.O</li>
                 </ul>
               </div>
             </div>
@@ -112,96 +107,260 @@
                   data-bs-target="#panelsStayOpen-collapseFour"
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFour"
+                  ng-click="setSubMenuIndex(1)"
+                  ng-class="{'actv':selectedNav == '1'}"
                 >
                   <strong> FAQ</strong>
                 </button>
               </a>
             </h2>
-            <div
-              id="panelsStayOpen-collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingFour"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li
-                    ng-click="setSubMenuIndex(2)"
-                    class="fs-4 acc-men"
-                    ng-class="{'actv':selectedNav == '2'}"
-                  >
-                    Founder FAQ
-                  </li>
-                  <li
-                    ng-click="setSubMenuIndex(3)"
-                    class="fs-4 acc-men"
-                    ng-class="{'actv':selectedNav == '3'}"
-                  >
-                    Investor FAQ
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
+
+      <div class="topNav">
+        <div class="d-flex flex-row justify-content-between px-3 mb-5">
+          <a href="#!/knowledgebase/investors" class="acc-men">Investors</a>
+          <a href="#!/knowledgebase/company" class="acc-men">Company</a>
+          <a class="acc-men" href="#!knowledgebase/sheeo">Underrepresented</a>
+          <a
+            class="acc-men"
+            ng-click="setNavTabIndex(1)"
+            ng-class="{'actv':selectedNavTab == '1'}"
+            href="#!knowledgebase/faq"
+            >FAQ</a
+          >
+        </div>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb gap-5 justify-content-center">
+            <li
+              ng-click="setSubMenuIndex(1)"
+              class="breadcrumb-item"
+              aria-current="page"
+              ng-class="{'active':selectedNav == '1'}"
+            >
+              FAQ
+            </li>
+          </ol>
+        </nav>
       </div>
 
       <div ng-if="isSetSubMenuIndex(1)">
         <div
           class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
         >
-          <div class="d-flex flex-column gap-4">
-            <h1 class="fS-1">SHE.E.O</h1>
-            <p class="text-muted fs-4">
-              Let's smash patriarchy, smash prejudice, empowering women
-              entrepreneurs
-            </p>
-          </div>
-          <p class="fs-4">
-            'SHE.E.O' is Pepcorns initiative to level the playing field for
-            female entrepreneurs. Inclusiveness and diversity are the only way
-            forward to any progressive society. Our goal with She.E.O is to not
-            only encourage a particular gender to build and scale their
-            business, but also to handhold their peers and support them as well.
-            We may blame dominance, but certainly it is not the answer. With
-            She.E.O now you have more opportunities to raise funds, pitch among
-            the like-minded community, earn initial traction, and perks of
-            Pepcorns credits.
-          </p>
-          <p class="alert alert-primary">
-            If you have any suggestions or feedback on how we can make She.E.O
-            drive more exuberant then do let us know. mail us:
-            <a class="text-dark" href="mailto:team@pepcorns.com"
-              >team@pepcorns.com</a
-            >
-          </p>
-        </div>
-      </div>
+          <div class="d-flex flex-column gap-5">
+            <h1 class="fS-1">FAQ</h1>
 
-      <div ng-if="isSetSubMenuIndex(2)">
-        <div
-          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
-        >
-          <div class="d-flex flex-column gap-4">
-            <h1 class="fS-1">Founder FAQ</h1>
-            <p class="text-muted fs-4">
-              We will format this as we will answer you questions
-            </p>
-          </div>
-          <p class="alert alert-primary">COMING SOON</p>
-        </div>
-      </div>
+            <div>
+              <h3 class="text-muted">Q. Who are we?</h3>
+              <p class="fs-5">
+                A. Pepcorns is a fundraising platform, through which startups
+                can raise capital from anybody, providing a medium for potential
+                startups/brands and investors to collaborate, work and grow
+                together.
+              </p>
+            </div>
 
-      <div ng-if="isSetSubMenuIndex(3)">
-        <div
-          class="px-xxl-8 px-xl-5 px-3 d-flex flex-column gap-5 container-md text-light"
-        >
-          <div class="d-flex flex-column gap-4">
-            <h1 class="fS-1">Investor FAQ</h1>
-            <p class="text-muted fs-4">
-              We will format this as we will answer you questions
-            </p>
+            <div>
+              <h3 class="text-muted">
+                Q. When was Pepcorns founded? Where is Pepcorns
+                registered/incorporated?
+              </h3>
+              <p class="fs-5">
+                A. On ideation of 1.5 years, Pepcorns is now registered as
+                Pepcorns Technologies Pvt Ltd since July 2022 at the Registrar
+                of Companies, Kanpur.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. What fees does Pepcorns charge from startups for raising
+                funds on the platform?
+              </h3>
+              <p class="fs-5">
+                A. There is no fee for creating a company profile on Pepcorns.
+                Pepcorns charges only when your campaign goes live. These
+                charges are divided into 2 parts:
+              </p>
+
+              <ol>
+                <li>
+                  5,000 upfront, this includes our diligence and other costs.
+                </li>
+                <li>
+                  8% of the total fundraising, only if successfully raised.
+                </li>
+              </ol>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. What fees does Pepcorns charge if I am investing in start-ups
+                via the platform?
+              </h3>
+              <p class="fs-5">
+                A. Investing via Pepcorns is completely free, as Pepcorns
+                charges fees to the companies seeking investment; or in case it
+                has to it may charge minimal for unavoidable charges. <br />
+                <br />
+                That being said, Pepcorns may charge its investors a commission
+                of up to 3% for escrow agents, payment gateway, and compliance
+                if not covered by the company. This fee will be charged to
+                investors on top of the investment. Your total amount charged
+                will be stated clearly on the investment form with processing
+                fees (say, 2.5% processing fee).
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. What all data do I need to create a start-up account?
+              </h3>
+              <p class="fs-5">
+                A. Business plan, pitch deck, fundraising history, minimum and
+                final goal to raise funds, and use of proceeds is some
+                information you need to list. <br />
+                <br />
+                Registered companies need to produce some additional details
+                like a director’s/founder's equity statement, profit & loss
+                statements, balance sheet, cash flow statement, and a company
+                certificate.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. How do I launch a campaign for my start-up?
+              </h3>
+              <p class="fs-5">
+                A. The first step to start a campaign for your start-up is to
+                create a free Pepcorns account. After logging into your Pepcorns
+                account, click on Get Funded → Mange Pitch. Pitch your ideas in
+                a creative way. The next step is uploading a video pitch for
+                your start-up and adding your bank account details. You are
+                ready to launch your campaign now!
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. Is Pepcorns only for Indian-based companies?
+              </h3>
+              <p class="fs-5">
+                A. Currently, we are not able to offer our platform to companies
+                that don't have an Indian presence. However, in the future, we
+                aim to expand globally.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. What are some financing instruments for early-stage investors
+                provided by Pepcorns?
+              </h3>
+              <p class="fs-5">
+                A. We, at Pepcorns, provide many financing instruments for
+                early-stage investors- <br />
+                <br />
+                <strong>SAFE Notes- </strong> SAFE (or simple agreement for
+                future equity) notes are documents that startups often use to
+                help raise seed capital. It is an agreement to purchase equity
+                shares of the company at a future date.
+                <strong>SWAP- </strong> SWAP is a basic agreement for the
+                purchase of share warrants of a company by an investor.
+                <strong>CSOP- </strong>
+                Community Stock Option Plan means a written agreement between
+                the CSOP Holder and a Company, which grants them certain equity
+                benefits of the company.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. As an investor, how can I reduce the risks that come along
+                with investing?
+              </h3>
+              <p class="fs-5">
+                A. You are more likely to avoid losses by diversifying your
+                investments, focusing on areas in which you have the expertise,
+                and investing in start-ups whose products you strongly believe
+                in. Even professional investors have a difficult time predicting
+                exactly how start-ups will earn money in the future (e.g.,
+                Google in 1999). Investing in what you know and find personally
+                valuable is an important signal of a good investment.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. What as an investor do I get when I invest in startups?
+              </h3>
+              <p class="fs-5">
+                A. It depends on the instrument against which you are investing.
+                The types of compensation range from owning equity, to equity
+                benefits, to rewards and payouts.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. As an investor, what is a safe amount to invest?
+              </h3>
+              <p class="fs-5">
+                A. Anybody can invest in their favorite startup, starting with
+                as little as ₹1000 through Pepcorns. This token size varies
+                depending on your risk appetite, the sky is the limit. However,
+                we recommend making several small investments each company
+                rather than putting large in one.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. As an investor, how will the return on the invested amount be
+                determined?
+              </h3>
+              <p class="fs-5">
+                A. Straight answer is valuation. The post-money valuation of
+                your invested amount in the start-up determines your return. A
+                company's valuation aims to estimate its worth in the broader
+                sense, and the value of a company can be determined by looking
+                at many factors, such as the number of founders, business moat,
+                potential growth trends, assets owned, cash flow, customer
+                acquisition rate, and many more.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. As a start-up, how is your application evaluated?
+              </h3>
+              <p class="fs-5">
+                A. Pepcorns conducts extensive scrutiny and due diligence to
+                help us find quality business and a good fit for the investors.
+                Industry, future scope, customer engagement, marketing budget,
+                and previous funding are some factors that we consider for
+                eligibility.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-muted">
+                Q. As a gambling company, can I seek funding through Pepcorns?
+              </h3>
+              <p class="fs-5">
+                A. No. We, at Pepcorns, have prohibited the following domains to
+                mitigate risk to investors- <br />
+                <br />
+                Pornography, gambling, banking and investing companies,
+                discriminatory companies, and businesses subjected as illegal by
+                the Indian government.
+              </p>
+            </div>
           </div>
-          <p class="alert alert-primary">COMING SOON</p>
         </div>
       </div>
     </div>

@@ -166,6 +166,19 @@
       </div>
 
       <div class="topNav">
+        <div class="d-flex flex-row justify-content-between px-3 mb-5">
+          <a href="#!/knowledgebase/investors" class="acc-men">Investors</a>
+          <a
+            href=""
+            class="acc-men"
+            ng-click="setNavTabIndex(1)"
+            ng-class="{'actv':selectedNavTab == '1'}"
+            >Company</a
+          >
+          <a class="acc-men" href="#!knowledgebase/faq">Underrepresented</a>
+          <a class="acc-men" href="#!knowledgebase/faq">FAQ</a>
+        </div>
+
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb gap-5 justify-content-center">
             <li

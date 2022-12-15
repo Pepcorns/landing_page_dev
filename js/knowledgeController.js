@@ -2,6 +2,7 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
     var self = $scope;
     self.selectedMenu = 1
     self.selectedNav = 1
+    self.selectedNavTab = 1
 
     self.isSetSubMenuIndex = function (index) {
         if (self.subMenuIndex == index) {
@@ -19,6 +20,7 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
         }
     }
 
+    // Instruments Tabs
     self.isSetTabIndex = function (index) {
         if (self.tabIndex == index) {
             return true;
@@ -32,6 +34,23 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
         self.selectedMenu = index
         if (self.tabIndex != index) {
             self.tabIndex = index;
+        }
+    }
+
+    //Nav Tabs
+    self.isNavTabIndex = function (index) {
+        if (self.navTabIndex == index) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    self.navTabIndex = 1;
+    self.setNavTabIndex = function (index) {
+        self.selectedNavTab = index
+        if (self.navTabIndex != index) {
+            self.navTabIndex = index;
         }
     }
 

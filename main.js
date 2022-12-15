@@ -1,3 +1,17 @@
+//navbar hide and show on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".nav1").classList.remove('hide')
+    } else {
+        document.querySelector(".nav1").classList.add('hide')
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+
+//fade effect for elements
 $(window).on("load", function () {
     $(window).scroll(function () {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -10,60 +24,38 @@ $(window).on("load", function () {
             } else {
                 if ($(this).css("opacity") == 1) {
                     $(this).fadeTo(100, 0);
-                    $(".brand-logo ").attr("src", "http://placekitten.com/300/300");
-                    $(".brand-logo ").attr("src", "http://placekitten.com/200/200");
                 }
             }
         });
     }).scroll();
 });
 
+//play video when in view
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+var vid = document.getElementByClass("vi");
+vid.playbackRate = 2;
+function videoScroll() {
 
-// $(document).ready(function () {
-//     $(window).on("scroll", function () {
-//         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-//         $(".brand-logo").each(function () {
-//             var objectBottom = $(this).offset().top + $(this).outerHeight();
-//             console.log(objectBottom - windowBottom)
-//             if (objectBottom < windowBottom) {
-//                 $(".brand-logo ").attr("src", "http://placekitten.com/300/300");
-//             } else {
-//                 $(".brand-logo ").attr("src", "http://placekitten.com/200/200");
-//             }
-//         })
+    if (document.querySelectorAll('video[autoplay]').length > 0) {
+        var windowHeight = window.innerHeight,
+            videoEl = document.querySelectorAll('video[autoplay]');
 
-//     })
-// })
+        for (var i = 0; i < videoEl.length; i++) {
 
-$(document).ready(function () {
-    $(window).on("scroll", function () {
-        console.log($(this).scrollTop())
-        var wW = $(window).width()
-        if (wW < 1440) {
-            if ($(this).scrollTop() >= 2600) {
-                console.log("new")
-                $(".brand-logo ").attr("src", "http://placekitten.com/300/300");
+            var thisVideoEl = videoEl[i],
+                videoHeight = thisVideoEl.clientHeight,
+                videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+            if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
+                thisVideoEl.play();
             } else {
-                console.log("old");
-                $(".brand-logo ").attr("src", "http://placekitten.com/200/200");
+                thisVideoEl.pause();
             }
-        } else if (wW > 1440) {
-            if ($(this).scrollTop() >= 3100) {
-                console.log("new")
-                $(".brand-logo ").attr("src", "http://placekitten.com/300/300");
-            } else {
-                console.log("old");
-                $(".brand-logo ").attr("src", "./assets/an_2.gif");
-            }
-        } else {
-            if ($(this).scrollTop() >= 2600) {
-                console.log("new")
-                $(".brand-logo ").attr("src", "http://placekitten.com/300/300");
-            } else {
-                console.log("old");
-                $(".brand-logo ").attr("src", "http://placekitten.com/200/200");
-            }
+
         }
+    }
 
-    })
-})
+}
+
+
