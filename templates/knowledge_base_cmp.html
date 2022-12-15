@@ -1,6 +1,6 @@
 <div>
   <section style="background-color: var(--dark-bg)">
-    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-lg-row">
+    <div class="d-flex flex-column p-lg-5 p-2 gap-5 flex-xl-row">
       <div class="sideNav">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -165,8 +165,8 @@
         </div>
       </div>
 
-      <div class="topNav">
-        <div class="d-flex flex-row justify-content-between px-3 mb-5">
+      <div class="topNav p-2">
+        <div class="d-flex flex-row gap-1 px-sm-4 px-0 mb-3">
           <a href="#!/knowledgebase/investors" class="acc-men">Investors</a>
           <a
             href=""
@@ -175,62 +175,19 @@
             ng-class="{'actv':selectedNavTab == '1'}"
             >Company</a
           >
-          <a class="acc-men" href="#!knowledgebase/faq">Underrepresented</a>
+          <a class="acc-men" href="#!knowledgebase/sheeo">Underrepresented</a>
           <a class="acc-men" href="#!knowledgebase/faq">FAQ</a>
         </div>
 
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb gap-5 justify-content-center">
-            <li
-              ng-click="setSubMenuIndex(1)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '1'}"
-            >
-              For Companies
-            </li>
-            <li
-              ng-click="setSubMenuIndex(2)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '2'}"
-            >
-              Why Pepcorns?
-            </li>
-            <li
-              ng-click="setSubMenuIndex(3)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '3'}"
-            >
-              How it works?
-            </li>
-            <li
-              ng-click="setSubMenuIndex(4)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '4'}"
-            >
-              Who can fundraise?
-            </li>
-            <li
-              ng-click="setSubMenuIndex(5)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '5'}"
-            >
-              How do we charge?
-            </li>
-            <li
-              ng-click="setSubMenuIndex(6)"
-              class="breadcrumb-item"
-              aria-current="page"
-              ng-class="{'active':selectedNav == '6'}"
-            >
-              Campaign
-            </li>
-          </ol>
-        </nav>
+        <select
+          class="px-sm-4"
+          name="users"
+          ng-options="user.name for user in arrlist2"
+          ng-change="getdetails()"
+          ng-model="userselected"
+        >
+          <option value="" disabled>Select</option>
+        </select>
       </div>
 
       <div ng-if="isSetSubMenuIndex(1)">

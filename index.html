@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pepcorns</title>
 
     <!--Boostrap-->
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200"
     />
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -40,7 +40,7 @@
           </li>
         </ul>
 
-        <ul class="d-flex flex-row gap-5 justify-align-center">
+        <ul class="d-flex flex-row gap-2 gap-lg-5 justify-align-center">
           <li>
             <a href="https://app.pepcorns.com/#!/home/allcamp" class="menuItem"
               >Startups</a
@@ -54,7 +54,7 @@
           <li class="text-light dropDown">
             <span class="menuItem dropBtn" style="cursor: pointer">Learn</span>
             <div class="dropdown-content p-1">
-              <a class="dropdown-item" href="#">SHE.E.O</a>
+              <a class="dropdown-item" href="#!/knowledgebase/sheeo">SHE.E.O</a>
               <a class="dropdown-item" href="https://blog.pepcorns.com/"
                 >Blog</a
               >
@@ -67,9 +67,13 @@
         </ul>
 
         <ul class="d-flex flex-row gap-5">
-          <li><a href="" class="menuItem">Login</a></li>
           <li>
-            <a href="">
+            <a href="https://app.pepcorns.com/#!/login" class="menuItem"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a href="https://app.pepcorns.com/#!/signup">
               <span class="navButton"> Get Started</span>
             </a>
           </li>
@@ -133,10 +137,14 @@
               >
             </li>
 
-            <li><a href="" class="menuItem">Login</a></li>
+            <li>
+              <a href="https://app.pepcorns.com/#!/login" class="menuItem"
+                >Login</a
+              >
+            </li>
 
             <li>
-              <a href="">
+              <a href="https://app.pepcorns.com/#!/signup">
                 <span class="navButton"> Get Started</span>
               </a>
             </li>
@@ -145,7 +153,7 @@
 
             <div class="d-flex flex-column gap-3 px-2">
               <li class="text-muted fs-3">Learn</li>
-              <a class="text-light" href="#">SHE.E.O</a>
+              <a class="text-light" href="#!/knowledgebase/sheeo">SHE.E.O</a>
               <a class="text-light" href="https://blog.pepcorns.com/">Blog</a>
               <a class="text-light" href="#!/knowledgebase/faq">FAQ</a>
               <a class="text-light" href="#!/knowledgebase/investors"
@@ -164,15 +172,27 @@
       <div style="background-color: var(--dark-bg)" class="p-5">
         <div class="d-flex flex-column align-items-center gap-5 p-5">
           <h1 class="text-light text-center">Get Notified about Startups</h1>
-          <div class="d-flex flex-row">
-            <input type="email" placeholder="example@mail.com" />
-            <button class="primaryBtn">Subscribe</button>
+          <div>
+            <form class="d-flex flex-row" action="#">
+              <input
+                type="email"
+                placeholder="example@mail.com"
+                class="subscribemail"
+              />
+              <button
+                type="button"
+                class="primaryBtn"
+                onclick="subscribemailboxFun()"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
       <footer class="p-lg-5">
-        <div class="p-5 row row-cols-1 row-cols-xxl-5 gap-xxl-0 gap-5">
+        <div class="p-5 row row-cols-1 row-cols-xxl-5 gap-xxl-0 gap-5 w-100">
           <ul class="col d-flex flex-column gap-4 justify-content-center">
             <li><img src="./assets/logo.png" alt="" class="logo" /></li>
             <li>
@@ -260,6 +280,7 @@
             </div>
           </ul>
         </div>
+
         <div class="py-5 mt-3 px-1">
           <ul class="d-flex flex-row flex-wrap gap-5 justify-content-center">
             <li><a href="#!/terms">Terms Of Use</a></li>
@@ -268,6 +289,7 @@
             <li><a href="#!/risks">Risks</a></li>
           </ul>
         </div>
+
         <div class="p-lg-5 p-4">
           <p class="text-muted text-justify">
             <a href="https://pepcorns.com" class="text-primary">

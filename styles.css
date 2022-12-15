@@ -73,8 +73,14 @@ button {
 }
 
 button:focus,
-input:focus {
+input:focus,
+select:focus {
     outline: none;
+}
+
+select {
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
 }
 
 a:hover {
@@ -387,6 +393,8 @@ footer {
     padding: 0.5rem 1rem;
 }
 
+
+
 /*MEDIA QUERIES*/
 
 @media (min-width:1441px) {
@@ -414,6 +422,14 @@ footer {
 
     .topNav {
         display: none;
+    }
+
+    .h-scroll {
+        display: none;
+    }
+
+    .mockup2 {
+        display: none !important;
     }
 }
 
@@ -443,6 +459,14 @@ footer {
     .topNav {
         display: none;
     }
+
+    .h-scroll {
+        display: none;
+    }
+
+    .mockup2 {
+        display: none !important;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -468,7 +492,19 @@ footer {
     }
 
     .topNav {
+        display: block;
+    }
+
+    .topNav div {
+        overflow-x: scroll;
+    }
+
+    .h-scroll {
         display: none;
+    }
+
+    .mockup2 {
+        display: none !important;
     }
 
 }
@@ -523,6 +559,14 @@ footer {
 
     .sideNav {
         display: none;
+    }
+
+    .s-scroll {
+        display: none;
+    }
+
+    .mockup {
+        display: none !important;
     }
 
 
@@ -614,7 +658,22 @@ footer {
 
     .topNav {
         display: block;
-        padding: 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: var(--dark-bg);
+    }
+
+    .topNav div {
+        overflow-x: scroll;
+    }
+
+    .s-scroll {
+        display: none;
+    }
+
+    .mockup {
+        display: none !important;
     }
 
 }
