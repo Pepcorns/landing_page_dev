@@ -1,9 +1,22 @@
-app.controller("knowledgeController", ["$scope", function ($scope) {
+app.controller("knowledgeController", ["$scope", "$rootScope", "$timeout", function ($scope, $rootScope, $timeout) {
     var self = $scope;
-    self.selectedMenu = 1
-    self.selectedNav = 1
+    var root = $rootScope;
+
+
+    self.selectedMenu = 1 //instrument
+    self.selectedNav = sessionStorage.getItem("menu_id") //submenu
+    self.selectedNav1 = sessionStorage.getItem("menu_id1") //submenu
     self.selectedNavTab = 1
 
+    root.$on("CallParent", function (e, v) {
+        self.setSubMenuIndex(v)
+        self.setSubMenuIndex1(v)
+    })
+
+    self.init = function () {
+        sessionStorage.setItem("menu_id", 1)
+        sessionStorage.setItem("menu_id1", 11)
+    }
 
     self.arrlist = [{
         "id": 1,
@@ -62,6 +75,7 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
 
     }
 
+    //pehla--------------------------
     self.isSetSubMenuIndex = function (index) {
         if (self.subMenuIndex == index) {
             return true;
@@ -70,12 +84,33 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
         }
     }
 
-    self.subMenuIndex = 1;
+    self.subMenuIndex = sessionStorage.getItem("menu_id");
     self.setSubMenuIndex = function (index) {
         self.selectedNav = index
         if (self.subMenuIndex != index) {
             self.subMenuIndex = index;
         }
+        sessionStorage.setItem("menu_id", index);
+
+    }
+
+    //dusra----------------------------
+    self.isSetSubMenuIndex1 = function (index) {
+        if (self.subMenuIndex1 == index) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    self.subMenuIndex1 = sessionStorage.getItem("menu_id1");
+    self.setSubMenuIndex1 = function (index) {
+        self.selectedNav1 = index
+        if (self.subMenuIndex1 != index) {
+            self.subMenuIndex1 = index;
+        }
+        sessionStorage.setItem("menu_id1", index);
+
     }
 
     // Instruments Tabs
@@ -102,6 +137,7 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
         } else {
             return false;
         }
+
     }
 
     self.navTabIndex = 1;
@@ -110,6 +146,13 @@ app.controller("knowledgeController", ["$scope", function ($scope) {
         if (self.navTabIndex != index) {
             self.navTabIndex = index;
         }
+
     }
 
+    self.how = function () {
+        alert('worki')
+        self.setSubMenuIndex(2)
+    }
+
+    self.init();
 }])

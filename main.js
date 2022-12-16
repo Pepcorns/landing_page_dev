@@ -59,6 +59,7 @@ function videoScroll() {
 }
 
 
+//utilities
 function subscribemailboxFun() {
     var em2 = document.querySelector('.subscribemail').value;
     console.log(em2)
@@ -72,9 +73,6 @@ function subscribeInv(email) {
     }
     else {
         if (validateEmail(email)) {
-
-            //window.location.replace("https://app.pepcorns.com/#!/signup");
-            //window.location("https://pep.bitnamiapp.com/founders/#!/signup")
             send_request(JSON.stringify({ "email": email }))
         }
         else {
@@ -92,7 +90,6 @@ function websiteEmailCamp(email) {
     else {
         if (validateEmail(email)) {
             window.open("https://app.pepcorns.com/#!/signup?referralcode=websitecamp&emailCampaign=" + email);
-            //send_request(JSON.stringify({ "email": email}))
         }
         else {
             swal("..mmmm", "The email ID seems incorrect.Do you mind checking it once.", 'warning');

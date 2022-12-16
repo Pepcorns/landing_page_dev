@@ -400,12 +400,12 @@ footer {
 @media (min-width:1441px) {
 
     #whitebg {
-        height: calc(590px + 0.33333vw) !important;
+        height: calc(800px + 0.33333vw) !important;
     }
 
     #blackbg,
     #makered {
-        height: calc(390px + 0.33333vw) !important;
+        height: calc(440px + 0.33333vw) !important;
     }
 
     .hero-text {
@@ -441,7 +441,7 @@ footer {
 
     #blackbg,
     #makered {
-        height: calc(260px + 0.33333vw);
+        height: calc(305px + 0.33333vw);
     }
 
     .hero-text {
@@ -469,7 +469,7 @@ footer {
     }
 }
 
-@media (min-width:769px) and (max-width:1024px) {
+@media (min-width:770px) and (max-width:1024px) {
     #whitebg {
         height: calc(410px + 0.33333vw);
     }
@@ -509,7 +509,7 @@ footer {
 
 }
 
-@media (min-width:577px) and (max-width:768px) {
+@media (min-width:577px) and (max-width:769px) {
     #whitebg {
         height: calc(410px + 0.33333vw);
     }

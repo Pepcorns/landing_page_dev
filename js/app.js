@@ -36,3 +36,19 @@ app.config(function ($routeProvider) {
         });
 });
 
+app.controller('indexController', ['$scope', '$rootScope', '$timeout', indexController]);
+
+function indexController($scope, $rootScope, $timeoout) {
+    var self = $scope
+    self.how = function () {
+        $rootScope.$emit("CallParent", 2)
+    };
+    self.inst = function () {
+        $rootScope.$emit("CallParent", 3)
+    }
+
+    self.howc = function () {
+        $rootScope.$emit("CallParent", 13)
+    }
+}
+

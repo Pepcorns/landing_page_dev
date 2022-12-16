@@ -27,7 +27,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
   </head>
   <body>
-    <div ng-app="app">
+    <div ng-app="app" ng-controller="indexController">
       <!--large devices navbar -->
       <nav
         class="d-flex flex-row px-5 py-4 align-items-center justify-content-between nav1"
@@ -165,7 +165,7 @@
       </div>
 
       <!--Main Window Start-->
-      <div ng-view></div>
+      <div ng-view autoscroll></div>
       <!--Main Window End-->
 
       <!--Subscribe-->
@@ -245,15 +245,31 @@
 
           <ul class="col d-flex flex-column gap-2">
             <h4 class="text-light">FOR INVESTORS</h4>
-            <li><a href="">Start Investing</a></li>
-            <li><a href="">How Investing works</a></li>
+            <li>
+              <a href="https://app.pepcorns.com/#!/login">Start Investing</a>
+            </li>
+            <li>
+              <a href="#!/knowledgebase/investors" ng-click="how()"
+                >How Investing works</a
+              >
+            </li>
           </ul>
 
           <ul class="col d-flex flex-column gap-2">
             <h4 class="text-light">FOR STARTUPS</h4>
-            <li><a href="">Raise Capital</a></li>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Instruments</a></li>
+            <li>
+              <a href="https://app.pepcorns.com/#!/signup">Raise Capital</a>
+            </li>
+            <li>
+              <a href="#!/knowledgebase/company" ng-click="howc()"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a href="#!/knowledgebase/investors" ng-click="inst()"
+                >Instruments</a
+              >
+            </li>
           </ul>
 
           <ul class="col d-flex flex-column gap-2">
@@ -262,7 +278,7 @@
             <li><a href="https://blog.pepcorns.com/">Blog</a></li>
             <li><a href="#!knowledgebase/faq">FAQ</a></li>
             <li><a href="#!contact">Contact</a></li>
-            <li><a href="">We're hiring</a></li>
+            <li><a href="#!/contact">We're hiring</a></li>
           </ul>
 
           <ul class="col d-flex flex-column gap-2">
