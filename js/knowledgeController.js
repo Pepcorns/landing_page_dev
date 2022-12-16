@@ -9,14 +9,10 @@ app.controller("knowledgeController", ["$scope", "$rootScope", "$timeout", funct
     self.selectedNavTab = 1
 
     root.$on("CallParent", function (e, v) {
+
         self.setSubMenuIndex(v)
         self.setSubMenuIndex1(v)
     })
-
-    self.init = function () {
-        sessionStorage.setItem("menu_id", 1)
-        sessionStorage.setItem("menu_id1", 11)
-    }
 
     self.arrlist = [{
         "id": 1,
@@ -154,5 +150,4 @@ app.controller("knowledgeController", ["$scope", "$rootScope", "$timeout", funct
         self.setSubMenuIndex(2)
     }
 
-    self.init();
 }])

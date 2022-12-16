@@ -49,6 +49,15 @@ function indexController($scope, $rootScope, $timeoout) {
                 $("#return-to-top").fadeOut(200);
             }
         });
+
+        if (sessionStorage.getItem("menu_id") && sessionStorage.getItem("menu_id")) {
+            return
+        } else {
+            sessionStorage.setItem("menu_id", 1)
+            sessionStorage.setItem("menu_id1", 11)
+        }
+
+
     }
 
     self.how = function () {
