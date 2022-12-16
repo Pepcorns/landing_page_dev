@@ -40,6 +40,17 @@ app.controller('indexController', ['$scope', '$rootScope', '$timeout', indexCont
 
 function indexController($scope, $rootScope, $timeoout) {
     var self = $scope
+
+    self.init = function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {
+                $("#return-to-top").fadeIn(200);
+            } else {
+                $("#return-to-top").fadeOut(200);
+            }
+        });
+    }
+
     self.how = function () {
         $rootScope.$emit("CallParent", 2)
     };
@@ -50,5 +61,16 @@ function indexController($scope, $rootScope, $timeoout) {
     self.howc = function () {
         $rootScope.$emit("CallParent", 13)
     }
+
+    self.scrollTop = function () {
+        $("body,html").animate(
+            {
+                scrollTop: 0,
+            },
+            500
+        );
+    };
+
+    self.init();
 }
 

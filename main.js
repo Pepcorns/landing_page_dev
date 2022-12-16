@@ -59,6 +59,8 @@ function videoScroll() {
 }
 
 
+
+
 //utilities
 function subscribemailboxFun() {
     var em2 = document.querySelector('.subscribemail').value;

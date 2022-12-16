@@ -147,6 +147,14 @@ footer {
     transition: 0.5s ease-in-out;
 }
 
+.scrollup {
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    height: 60px;
+    width: 60px;
+    background-color: #00000054;
+
+}
 
 /*--nav--*/
 .nav1 {
