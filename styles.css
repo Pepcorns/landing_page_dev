@@ -705,5 +705,10 @@ footer {
     .mockup {
         display: none !important;
     }
-
+    #partners-container img{
+        padding: 0 50px;
+    }
+    #mobile-links img{
+        width: 6rem;
+    }
 }
