@@ -406,7 +406,6 @@ footer {
     display: flex;
     overflow-x: auto;
     align-items: center;
-    justify-content: center;
 }
 
 #partners-container::-webkit-scrollbar {
@@ -414,7 +413,7 @@ footer {
   }
 
 #partners-container img{
-    margin: 0 100px;
+    padding: 0 100px;
 }
 
 /* mobile links */
