@@ -401,7 +401,30 @@ footer {
     padding: 0.5rem 1rem;
 }
 
+/* partners section */
+#partners-container{
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+}
 
+#partners-container::-webkit-scrollbar {
+    display: none;
+  }
+
+#partners-container img{
+    margin: 0 100px;
+}
+
+/* mobile links */
+#mobile-links img{
+    cursor: pointer;
+}
+#mobile-links img:hover{
+    transform: translate(0px, -10px);
+    transition: 0.2s ease-in-out;
+}
 
 /*MEDIA QUERIES*/
 

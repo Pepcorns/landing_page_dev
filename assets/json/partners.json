@@ -1,0 +1,14 @@
+[
+  {
+    "name": "DECENTRO",
+    "img": "./assets/decentro.png"
+  },
+  {
+    "name": "AI PRICE",
+    "img": "./assets/aiprice.png"
+  },
+  {
+    "name": "INAI",
+    "img": "./assets/inai.png"
+  }
+]
