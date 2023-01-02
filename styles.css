@@ -298,6 +298,12 @@ footer {
     height: 60px;
     width: 300px;
 }
+.funds-btn{
+    height: 60px;
+    width: 200px;
+    border: solid 0.5px var(--primary);
+    transition: 0.25s ease-in-out;
+}
 
 .arrow1,
 .arrow2 {
@@ -571,6 +577,10 @@ footer {
         height: 50px;
         width: 200px;
     }
+    .funds-btn{
+        height: 50px;
+        width: 200px;
+    }
 
     .arrow1,
     .arrow2 {
@@ -659,6 +669,10 @@ footer {
     }
 
     .poly {
+        height: 50px;
+        width: 200px;
+    }
+    .funds-btn{
         height: 50px;
         width: 200px;
     }
