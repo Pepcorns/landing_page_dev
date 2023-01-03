@@ -298,6 +298,12 @@ footer {
     height: 60px;
     width: 300px;
 }
+.funds-btn{
+    height: 60px;
+    width: 200px;
+    border: solid 0.5px var(--primary);
+    transition: 0.25s ease-in-out;
+}
 
 .arrow1,
 .arrow2 {
@@ -401,7 +407,29 @@ footer {
     padding: 0.5rem 1rem;
 }
 
+/* partners section */
+#partners-container{
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
 
+#partners-container::-webkit-scrollbar {
+    display: none;
+  }
+
+#partners-container img{
+    padding: 0 100px;
+}
+
+/* mobile links */
+#mobile-links img{
+    cursor: pointer;
+}
+#mobile-links img:hover{
+    transform: translate(0px, -10px);
+    transition: 0.2s ease-in-out;
+}
 
 /*MEDIA QUERIES*/
 
@@ -549,6 +577,10 @@ footer {
         height: 50px;
         width: 200px;
     }
+    .funds-btn{
+        height: 50px;
+        width: 200px;
+    }
 
     .arrow1,
     .arrow2 {
@@ -640,6 +672,10 @@ footer {
         height: 50px;
         width: 200px;
     }
+    .funds-btn{
+        height: 50px;
+        width: 200px;
+    }
 
     .arrow1,
     .arrow2 {
@@ -683,5 +719,105 @@ footer {
     .mockup {
         display: none !important;
     }
+    #partners-container img{
+        padding: 0 50px;
+    }
+    #mobile-links img{
+        width: 6rem;
+    }
+}
 
+
+/* swipper - start */
+
+.swiper {
+    width: 340px;
+    height: 440px;
+   }
+
+   .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4240bf3f;
+   }
+
+   
+   .swiper-slide-active{
+    background-color: #4240BF;
+   }
+
+/* content card */
+     
+ .card_container{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+ }
+ .card_header{
+   text-align: center;
+   font-weight: bold;
+   font-size: large;
+   /* letter spacing */
+   letter-spacing: 1px;
+ }
+ .card_body, .card_footer{
+   text-align: center;
+   font-size: medium;
+   font-weight: lighter;
+ }
+ .card_button {
+   background: transparent;
+   color: #fff;
+   padding: 0.2rem 0.6rem;
+ }
+ .card_button a:hover {
+   color: #ffffff;
+ }
+
+ /* controllers */
+ .controllers{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 1rem;
+ }
+ .move_control, .shuffle_control{
+   background: #4240BF;
+   color: #fff;
+   border: none;
+   padding: 8px 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: normal;
+   cursor: pointer;
+   border-radius: 20%;
+ }
+ .shuffle_control{
+   background-color: #4240BF;
+   color: #fff;
+ }
+ .shuffle_control:hover{
+   background-color: #282c73;
+ }
+ .move_control:hover{
+   background-color: #ffffff;
+   color: #4240BF;
+ }
+/* swipper - end */
+
+/* media query for mobile */
+@media (max-width: 768px) {
+    .swiper {
+        width: 75vw;
+        height: 75vh;
+    }
+    
 }

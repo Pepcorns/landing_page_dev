@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pepcorns</title>
+
+    <title>
+      Pepcorns | Invest in Startups India | Fundraising for startups
+    </title>
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Invest in startups india" />
+    <meta name="keywords" content="Fundraising for startups in india" />
+    <meta name="keywords" content="Invest in indian startups" />
+    <meta name="keywords" content="Angel investors india" />
+    <meta name="keywords" content="Portfloio diversifications" />
+    <meta name="keywords" content="Pre seed funding india" />
+
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Invest in indian startups starting at 1000rs with Pepcorns.✔ Ensure portfolio diversification ✔ Fund your startup with crowdfunding for startups in india within days."
+    />
+
+    <!-- canonical -->
+    <link rel="canonical" href="https://pepcorns.com/" />
 
     <!--Boostrap-->
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
@@ -25,6 +45,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div ng-app="app" ng-controller="indexController">
@@ -47,7 +83,7 @@
             >
           </li>
           <li>
-            <a href="https://app.pepcorns.com/#!/login" class="menuItem"
+            <a href="http://www.neon.ly/funding" class="menuItem"
               >Raise Funding</a
             >
           </li>
@@ -62,6 +98,7 @@
               <a class="dropdown-item" href="#!/knowledgebase/investors"
                 >Knowledge Base</a
               ><a class="dropdown-item" href="#!/about">About</a>
+              <a class="dropdown-item" href="#!/flashcards">Flashcards</a>
             </div>
           </li>
         </ul>
@@ -159,19 +196,36 @@
               <a class="text-light" href="#!/knowledgebase/investors"
                 >Knowledge Base</a
               ><a class="text-light" href="#!/about">About</a>
+              <a class="text-light" href="#!/flashcards">Flashcards</a>
             </div>
           </ul>
         </div>
       </div>
 
+      <!-- SEO h2 -->
+      <h2 title="Invest in indian startups"></h2>
+      <h2 title="Fundraising for startups"></h2>
+      <h2 title="Crowdfunding for startups in india"></h2>
+
       <!--Main Window Start-->
       <div ng-view autoscroll></div>
       <!--Main Window End-->
 
+      <!--Play Store Links-->
+      <div style="background-color: var(--dark-bg)" class="p-5">
+        <div class="d-flex flex-column align-items-center gap-5 p-5">
+          <h2 class="text-light text-center">App Coming soon on:</h2>
+          <div class="d-flex gap-5" id="mobile-links">
+            <img src="./assets/icons/playstore.svg" alt="playstore" />
+            <img src="./assets/icons/appstore.svg" alt="appstore" />
+          </div>
+        </div>
+      </div>
+
       <!--Subscribe-->
       <div style="background-color: var(--dark-bg)" class="p-5">
         <div class="d-flex flex-column align-items-center gap-5 p-5">
-          <h1 class="text-light text-center">Get Notified about Startups</h1>
+          <h2 class="text-light text-center">Get Notified about Startups</h2>
           <div>
             <form class="d-flex flex-row" action="#">
               <input
@@ -203,11 +257,9 @@
       </div>
 
       <footer class="">
-        <div
-          class="p-xl-5 p-lg-4 p-5 row row-cols-1 row-cols-lg-4 row-cols-md-2 gap-lg-0 justify-content-between w-100"
-        >
+        <div class="p-xl-5 p-lg-4 p-5 row w-100 py-4">
           <ul
-            class="col d-flex flex-column gap-4 justify-content-center align-items-lg-start align-items-center my-4"
+            class="col-12 col-md-4 d-flex flex-column gap-4 align-items-md-start align-items-center"
           >
             <li><img src="./assets/logo.png" alt="" class="logo" /></li>
             <li>
@@ -256,23 +308,11 @@
                 </li>
               </ul>
             </li>
-            <div>
-              <li class="d-flex flex-row gap-3">
-                <span class="material-symbols-outlined text-light">
-                  location_on
-                </span>
-                <span class="text-light">Kanpur| Bengaluru |Delhi</span>
-              </li>
-              <li class="d-flex flex-row gap-3">
-                <span class="material-symbols-outlined text-light"> mail </span>
-                <span>
-                  <a href="mailto:support@pepcorns.com">support@pepcorns.com</a>
-                </span>
-              </li>
-            </div>
           </ul>
 
-          <ul class="col d-flex flex-column align-items-center gap-2 my-4">
+          <ul
+            class="col-12 col-md-2 d-flex flex-column gap-2 align-items-md-start align-items-center mt-4"
+          >
             <h4 class="text-light">FOR INVESTORS</h4>
             <li>
               <a href="https://app.pepcorns.com/#!/login">Start Investing</a>
@@ -284,10 +324,12 @@
             </li>
           </ul>
 
-          <ul class="col d-flex flex-column align-items-center gap-2 my-4">
+          <ul
+            class="col-12 col-md-2 d-flex flex-column gap-2 align-items-md-start align-items-center mt-4"
+          >
             <h4 class="text-light">FOR STARTUPS</h4>
             <li>
-              <a href="https://app.pepcorns.com/#!/signup">Raise Capital</a>
+              <a href="http://www.neon.ly/funding">Raise Capital</a>
             </li>
             <li>
               <a href="#!/knowledgebase/company" ng-click="howc()"
@@ -301,27 +343,54 @@
             </li>
           </ul>
 
-          <ul class="col d-flex flex-column align-items-center gap-2 my-4">
+          <ul
+            class="col-12 col-md-2 d-flex flex-column gap-2 align-items-md-start align-items-center mt-4"
+          >
             <h4 class="text-light">COMPANY</h4>
             <li><a href="#!/about">About</a></li>
             <li><a href="https://blog.pepcorns.com/">Blog</a></li>
             <li><a href="#!knowledgebase/faq">FAQ</a></li>
             <li><a href="#!contact">Contact</a></li>
-            <li><a href="#!/contact">We're hiring</a></li>
+            <li><a href="mailto:careers@pepcorns.com">We're hiring</a></li>
           </ul>
 
-          <ul class="col d-flex flex-column align-items-center gap-2 my-4"></ul>
-        </div>
-
-        <div class="py-5 mt-3 px-1">
-          <ul class="d-flex flex-row flex-wrap gap-5 justify-content-center">
-            <li><a href="#!/terms">Terms Of Use</a></li>
-            <li><a href="#!/privacy">Privacy Policy</a></li>
-            <li><a href="#!refund">Refund Policy</a></li>
-            <li><a href="#!/risks">Risks</a></li>
+          <ul
+            class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-md-start align-items-center mt-4"
+          >
+            <li class="d-flex flex-row gap-3">
+              <span class="material-symbols-outlined text-light">
+                location_on
+              </span>
+              <span class="text-light">Kanpur| Bengaluru |Delhi</span>
+            </li>
+            <li class="d-flex flex-row gap-3">
+              <span class="material-symbols-outlined text-light"> mail </span>
+              <span>
+                <a href="mailto:support@pepcorns.com">support@pepcorns.com</a>
+              </span>
+            </li>
           </ul>
         </div>
+        <div class="row py-5 mt-3 px-md-4">
+          <div class="col-md-4 col-12"></div>
 
+          <div class="col-md-8 col-12">
+            <ul class="row">
+              <li class="col-md-3 text-center text-md-start">
+                <a href="#!/terms">Terms Of Use</a>
+              </li>
+              <li class="col-md-3 text-center text-md-start">
+                <a href="#!/privacy">Privacy Policy</a>
+              </li>
+              <li class="col-md-3 text-center text-md-start">
+                <a href="#!refund">Refund Policy</a>
+              </li>
+              <li class="col-md-3 text-center text-md-start">
+                <a href="#!/risks">Risks</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="p-lg-5 p-4">
           <p class="text-muted text-justify">
             <a href="https://pepcorns.com" class="text-primary">
@@ -355,5 +424,6 @@
 
     <script src="./js/app.js"></script>
     <script src="./js/knowledgeController.js"></script>
+    <script src="./js/flashController.js"></script>
   </body>
 </html>
