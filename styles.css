@@ -754,7 +754,7 @@ footer {
 /* content card */
      
  .card_container{
-    margin: 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -776,7 +776,7 @@ footer {
  .card_button {
    background: transparent;
    color: #fff;
-   padding: 0.2rem 0.6rem;
+   padding: 0.2rem 0.4rem;
  }
  .card_button a:hover {
    color: #ffffff;
@@ -788,7 +788,8 @@ footer {
    justify-content: space-evenly;
    margin-top: 1rem;
  }
- .move_control, .shuffle_control{
+ .move_control
+ {
    background: #4240BF;
    color: #fff;
    border: none;
@@ -800,10 +801,10 @@ footer {
    cursor: pointer;
    border-radius: 20%;
  }
- .shuffle_control{
+ /* .shuffle_control{
    background-color: #4240BF;
    color: #fff;
- }
+ } */
  .shuffle_control:hover{
    background-color: #282c73;
  }
@@ -811,13 +812,19 @@ footer {
    background-color: #ffffff;
    color: #4240BF;
  }
-/* swipper - end */
-
-/* media query for mobile */
-@media (max-width: 768px) {
-    .swiper {
-        width: 75vw;
-        height: 75vh;
+ /* media query for mobile */
+ @media (max-width: 768px) {
+    .card_container{
+         padding: 0 0.5rem;
     }
-    
-}
+     .swiper {
+        width: 60vw;
+        max-width: 62vw;
+        height: 85vh;
+     }
+     .move_control{
+        padding: 6px 12px;
+        font-size: small;
+     }
+ }
+/* swipper - end */

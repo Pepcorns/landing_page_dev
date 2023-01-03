@@ -16,7 +16,7 @@ app.controller("flashController", [
         prevEl: ".prev-button",
       },
       cardsEffect: {
-        perSlideOffset: 4,
+        perSlideOffset: 2,
         perSlideRotate: 2,
         slideShadows: true,
       },
