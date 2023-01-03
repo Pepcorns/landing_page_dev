@@ -1,5 +1,5 @@
 var app = angular.module("app", ["ngRoute", "ngResource"]);
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
   $routeProvider
     .when("/", {
       templateUrl: "./templates/home.html",
@@ -38,10 +38,15 @@ app.config(function ($routeProvider) {
     .when("/contact", {
       templateUrl: "./templates/contact.html",
     })
-    .when("/flashcards", {
+    .when("localhost:5501/flashcards", {
       templateUrl: "./templates/flashcards.html",
       controller: "flashController",
+    })
+    .otherwise({
+      redirectTo: "/",
     });
+  // $locationProvider.hashPrefix("");
+  $locationProvider.html5Mode({ enabled: true, requireBase: false });
 });
 
 app.controller("indexController", [
