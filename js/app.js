@@ -38,15 +38,14 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/contact", {
       templateUrl: "./templates/contact.html",
     })
-    .when("localhost:5501/flashcards", {
+    .when("/flashcards", {
       templateUrl: "./templates/flashcards.html",
       controller: "flashController",
     })
     .otherwise({
       redirectTo: "/",
     });
-  // $locationProvider.hashPrefix("");
-  $locationProvider.html5Mode({ enabled: true, requireBase: false });
+  $locationProvider.html5Mode(true);
 });
 
 app.controller("indexController", [
